@@ -1,5 +1,3 @@
 class User < ActiveRecord::Base
-	def test(user)
-		user = User.find(session[:id])
-	end
+	has_many :post
 end

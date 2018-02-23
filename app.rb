@@ -23,6 +23,7 @@ get '/create' do
 end
 
 post '/registrations' do
+	@user = User.create(name: params[:name], email: params[:email], password: params[:password])
 	session[:id] = @user.id
 	redirect '/users/home'
 end

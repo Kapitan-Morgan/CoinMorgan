@@ -23,9 +23,14 @@ get '/create' do
 end
 
 post '/registrations' do
-	@user = User.create(name: params[:name], email: params[:email], password: params[:password])
-	session[:id] = @user.id
-	redirect '/users/home'
+	a = User.find_by(name: params[:name])
+	unless a
+		@user = User.create(name: params[:name], email: params[:email], password: params[:password])
+		session[:id] = @user.id
+		redirect '/users/home'
+	else
+		erb :'eror/dont_name'
+	end
 end
 
 get '/users/home' do

@@ -46,9 +46,13 @@ end
 
 post '/sessions' do
 	@user = User.find_by(email: params[:email], password: params[:password])
-	session[:id] = @user.id
-	p session[:id]
-	redirect 'users/home'
+	if @user != nil
+		session[:id] = @user.id
+		p session[:id]
+		redirect 'users/home'
+	else
+		erb :'eror/session_eror'
+	end
 end
 
 get '/sessions/logout' do
@@ -72,11 +76,16 @@ end
 
 # delete post
 delete '/post/:id' do
-	@post = Post.find(params[:id])
-	@post.destroy
-	redirect '/'
+	@user = User.find(session[:id]) if session[:id]
+	if @user != nil
+		if @user[:name] == 'Admin'
+			@post = Post.find(params[:id])
+			@post.destroy
+			redirect '/'
+		else
+			erb :'eror/no_access'
+		end
+	else
+		erb :'eror/no_access'
+	end
 end 
-	
-	def test
-      'method '
-    end

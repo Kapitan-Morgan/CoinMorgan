@@ -1,19 +1,58 @@
 require 'sinatra'
 require 'sinatra/activerecord'
-require "./models.rb"
+require "./models/models.rb"
+require "./models/users.rb"
+
+session = {}
 
 get "/" do
+	@user = User.find(session[:id]) if session[:id]
 	@posts = Post.all
 	erb :index
 end
 
 get '/post/:id' do
+	@user = User.find(session[:id]) if session[:id]
 	@post = Post.find(params[:id])
 	erb :post_page
 end
 
 get '/create' do
+	@user = User.find(session[:id]) if session[:id]
 	erb :create
+end
+
+post '/registrations' do
+	session[:id] = @user.id
+	redirect '/users/home'
+end
+
+get '/users/home' do
+	@user = User.find(session[:id]) if session[:id]
+	erb :'users/home'
+end
+
+get '/registrations/signup' do
+	@user = User.find(session[:id]) if session[:id]
+	erb :registrations
+end
+
+get '/sessions/login' do
+	@user = User.find(session[:id]) if session[:id]
+	puts session
+	erb :'users/login'
+end
+
+post '/sessions' do
+	@user = User.find_by(email: params[:email], password: params[:password])
+	session[:id] = @user.id
+	p session[:id]
+	redirect 'users/home'
+end
+
+get '/sessions/logout' do
+	session.clear
+	redirect '/'
 end
 
 # create post
@@ -35,4 +74,8 @@ delete '/post/:id' do
 	@post = Post.find(params[:id])
 	@post.destroy
 	redirect '/'
-end
+end 
+	
+	def test
+      'method '
+    end

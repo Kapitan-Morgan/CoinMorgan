@@ -9,6 +9,13 @@
  <ul>
    <li><a href="/">Home</a></li>
    <a href="/create">create Post</a>
+   <% unless @user.nil? %>
+   	<a href="/users/home"><%= @user.name %></a>
+   	<a href="/sessions/logout">Log Out</a>
+   <% else %>
+   	<a href="/registrations/signup">Sign up</a>
+   	<a href="/sessions/login">Log In</a>
+   <% end %>
  </ul>
  <%= yield %>
 </body>

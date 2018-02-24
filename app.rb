@@ -5,11 +5,21 @@ require "./models/users.rb"
 
 enable :sessions
 
-get "/" do
+get '/' do
 	@user = User.find(session[:id]) if session[:id]
-	a = Post.all
-	@posts = a.find_all{|e| e[:owner_id] == @user[:id]}
 	erb :index
+end
+
+#Просмотр постов пользователя
+get "/posts/show" do
+	if session[:id]
+		@user = User.find(session[:id])
+		a = Post.all
+		@posts = a.find_all{|e| e[:owner_id] == @user[:id]}
+		erb :'posts/show'
+	else 
+		erb :'users/login'
+	end
 end
 
 get '/post/:id' do
@@ -19,8 +29,12 @@ get '/post/:id' do
 end
 
 get '/create' do
-	@user = User.find(session[:id]) if session[:id]
-	erb :create
+	if session[:id]
+		@user = User.find(session[:id]) if session[:id]
+		erb :create
+	else 
+		erb :'users/login'
+	end
 end
 
 post '/registrations' do
@@ -71,7 +85,7 @@ post '/post' do
 	if session[:id]
 		@user = User.find(session[:id])
 		@post = Post.create(title: params[:title], body: params[:body], owner_id: @user[:id])
-		redirect '/'
+		redirect '/posts/show'
 	else
 		erb :'/sessions/login'
 	end
@@ -79,17 +93,25 @@ end
 
 # update post
 put '/post/:id' do
-	@post = Post.find(params[:id])
-	@post.update(title: params[:title], body: params[:body])
-	@post.save
-	redirect '/post/'+params[:id]
+	if session[:id]
+		@post = Post.find(params[:id])
+		if @post[:owner_id] == session[:id]
+			@post.update(title: params[:title], body: params[:body])
+			@post.save
+			redirect '/post/'+params[:id]
+		else
+			erb :'eror/no_access'
+		end
+	else
+		erb :'/sessions/login'
+	end
 end
 
 # delete post
 delete '/post/:id' do
-	@user = User.find(session[:id]) if session[:id]
-	if @user != nil
-		if @user[:name] == 'Admin'
+	if session[:id]
+		@post = Post.find(params[:id])	
+		if @post[:owner_id] == session[:id]
 			@post = Post.find(params[:id])
 			@post.destroy
 			redirect '/'

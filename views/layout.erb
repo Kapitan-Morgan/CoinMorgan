@@ -8,10 +8,11 @@
 <body>
  <ul>
    <li><a href="/">Home</a></li>
-   <li><a href="/create">create Post</a></li>
    <% unless @user.nil? %>
    	<li><a href="/users/home"><%= @user.name %></a></li>
    	<li><a href="/sessions/logout">Log Out</a></li>
+   	<li><a href="/create">create Post</a></li>
+   	<li><a href="/posts/show">Show posts</a></li>
    <% else %>
    	<li><a href="/registrations/signup">Sign up</a></li>
    	<li><a href="/sessions/login">Log In</a></li>

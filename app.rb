@@ -7,7 +7,8 @@ enable :sessions
 
 get "/" do
 	@user = User.find(session[:id]) if session[:id]
-	@posts = Post.all
+	a = Post.all
+	@posts = a.find_all{|e| e[:owner_id] == @user[:id]}
 	erb :index
 end
 
@@ -54,7 +55,6 @@ post '/sessions' do
 	@user = User.find_by(email: params[:email], password: params[:password])
 	if @user != nil
 		session[:id] = @user.id
-		p session
 		redirect 'users/home'
 	else
 		erb :'eror/session_eror'
@@ -68,8 +68,13 @@ end
 
 # create post
 post '/post' do
-	@post = Post.create(title: params[:title], body: params[:body])
-	redirect '/'
+	if session[:id]
+		@user = User.find(session[:id])
+		@post = Post.create(title: params[:title], body: params[:body], owner_id: @user[:id])
+		redirect '/'
+	else
+		erb :'/sessions/login'
+	end
 end
 
 # update post

@@ -3,7 +3,7 @@ require 'sinatra/activerecord'
 require "./models/models.rb"
 require "./models/users.rb"
 
-session = {}
+enable :sessions
 
 get "/" do
 	@user = User.find(session[:id]) if session[:id]
@@ -34,6 +34,7 @@ post '/registrations' do
 end
 
 get '/users/home' do
+	puts session[:id]
 	@user = User.find(session[:id]) if session[:id]
 	erb :'users/home'
 end
@@ -53,7 +54,7 @@ post '/sessions' do
 	@user = User.find_by(email: params[:email], password: params[:password])
 	if @user != nil
 		session[:id] = @user.id
-		p session[:id]
+		p session
 		redirect 'users/home'
 	else
 		erb :'eror/session_eror'

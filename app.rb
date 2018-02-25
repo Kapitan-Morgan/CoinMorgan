@@ -167,7 +167,7 @@ doc.css('tr').each do |line|
 	pr = line.css('.js-format-price').text
 	bitcoin.push(
 	id: i,
-	name: n.chomp,
+	name: n,
 	price: pr
 	)
 	i+=1

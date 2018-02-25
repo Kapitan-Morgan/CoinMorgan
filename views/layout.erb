@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Sinatra Blog</title>
 	<link rel="stylesheet" href="css/style.css">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
 <body>
 	<div class="container">
@@ -14,10 +15,11 @@
    	<li><a href="/users/home"><%= @user.name %></a></li>
    	<li><a href="/sessions/logout">Log Out</a></li>
    	<li><a href="/create">create Post</a></li>
-   	<li><a href="/posts/show">Show posts</a></li>
+   	<li><a href="/posts/show">Портфель</a></li>
    <% else %>
    	<li><a href="/registrations/signup">Sign up</a></li>
    	<li><a href="/sessions/login">Log In</a></li>
+   	<li><a href="/update/index">Обновить</a></li>
    <% end %>
  </ul>
  <%= yield %>

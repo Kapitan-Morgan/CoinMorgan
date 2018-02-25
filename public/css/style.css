@@ -1,0 +1,18 @@
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.my_table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.my_table tr {
+	border-bottom: 1px solid lightgray;
+}
+.my_table td {
+
+}
+#table_head {
+	background-color: red;
+	box-sizing: border-box;
+}

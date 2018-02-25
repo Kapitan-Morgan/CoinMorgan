@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'sinatra'    # for Postgres
 gem "rake"  # so we can run Rake tasks
 gem "sinatra-activerecord"    # for Active Record models
+gem 'nokogiri'
+gem 'json'
 
 group :production do
 	gem 'pg'

@@ -4,8 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sinatra Blog</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div class="container">
  <ul>
    <li><a href="/">Home</a></li>
    <% unless @user.nil? %>
@@ -19,5 +21,6 @@
    <% end %>
  </ul>
  <%= yield %>
+</div>
 </body>
 </html>

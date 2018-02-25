@@ -1,0 +1,398 @@
+[
+  {
+    "name": "bitcoin",
+    "price": "9781.56"
+  },
+  {
+    "name": "tether",
+    "price": "1.00"
+  },
+  {
+    "name": "ethereum",
+    "price": "848.89"
+  },
+  {
+    "name": "litecoin",
+    "price": "216.05"
+  },
+  {
+    "name": "ethereum-classic",
+    "price": "37.17"
+  },
+  {
+    "name": "bitcoin-cash",
+    "price": "1194.54"
+  },
+  {
+    "name": "ripple",
+    "price": "0.955856"
+  },
+  {
+    "name": "nano",
+    "price": "11.98"
+  },
+  {
+    "name": "tron",
+    "price": "0.040849"
+  },
+  {
+    "name": "huobi-token",
+    "price": "2.28"
+  },
+  {
+    "name": "eos",
+    "price": "8.10"
+  },
+  {
+    "name": "elastos",
+    "price": "75.40"
+  },
+  {
+    "name": "iota",
+    "price": "1.95"
+  },
+  {
+    "name": "neo",
+    "price": "117.81"
+  },
+  {
+    "name": "dash",
+    "price": "595.93"
+  },
+  {
+    "name": "hshare",
+    "price": "10.53"
+  },
+  {
+    "name": "red-pulse",
+    "price": "0.213414"
+  },
+  {
+    "name": "waykichain",
+    "price": "0.408231"
+  },
+  {
+    "name": "zcash",
+    "price": "397.45"
+  },
+  {
+    "name": "digixdao",
+    "price": "349.67"
+  },
+  {
+    "name": "blockmason",
+    "price": "1.13"
+  },
+  {
+    "name": "binance-coin",
+    "price": "9.36"
+  },
+  {
+    "name": "qtum",
+    "price": "26.35"
+  },
+  {
+    "name": "monero",
+    "price": "276.92"
+  },
+  {
+    "name": "vechain",
+    "price": "5.71"
+  },
+  {
+    "name": "wings",
+    "price": "0.868640"
+  },
+  {
+    "name": "zclassic",
+    "price": "134.43"
+  },
+  {
+    "name": "cardano",
+    "price": "0.309688"
+  },
+  {
+    "name": "omisego",
+    "price": "17.03"
+  },
+  {
+    "name": "reddcoin",
+    "price": "0.010153"
+  },
+  {
+    "name": "hyper-pay",
+    "price": "0.037320"
+  },
+  {
+    "name": "lunyr",
+    "price": "21.88"
+  },
+  {
+    "name": "metal",
+    "price": "4.21"
+  },
+  {
+    "name": "ins-ecosystem",
+    "price": "2.48"
+  },
+  {
+    "name": "lisk",
+    "price": "20.32"
+  },
+  {
+    "name": "waves",
+    "price": "6.64"
+  },
+  {
+    "name": "stellar",
+    "price": "0.345589"
+  },
+  {
+    "name": "bibox-token",
+    "price": "0.757866"
+  },
+  {
+    "name": "ink",
+    "price": "0.179083"
+  },
+  {
+    "name": "iostoken",
+    "price": "0.035196"
+  },
+  {
+    "name": "icon",
+    "price": "3.82"
+  },
+  {
+    "name": "wepower",
+    "price": "0.178803"
+  },
+  {
+    "name": "iot-chain",
+    "price": "2.21"
+  },
+  {
+    "name": "swftcoin",
+    "price": "0.017247"
+  },
+  {
+    "name": "sirin-labs-token",
+    "price": "0.706554"
+  },
+  {
+    "name": "aeron",
+    "price": "2.29"
+  },
+  {
+    "name": "gifto",
+    "price": "0.406655"
+  },
+  {
+    "name": "bitcoin-gold",
+    "price": "116.61"
+  },
+  {
+    "name": "salt",
+    "price": "4.34"
+  },
+  {
+    "name": "adx-net",
+    "price": "1.63"
+  },
+  {
+    "name": "aelf",
+    "price": "1.23"
+  },
+  {
+    "name": "bytom",
+    "price": "0.335135"
+  },
+  {
+    "name": "revain",
+    "price": "2.29"
+  },
+  {
+    "name": "verge",
+    "price": "0.058530"
+  },
+  {
+    "name": "educare",
+    "price": "0.160447"
+  },
+  {
+    "name": "propy",
+    "price": "1.36"
+  },
+  {
+    "name": "jibrel-network",
+    "price": "0.445041"
+  },
+  {
+    "name": "odyssey",
+    "price": "0.017423"
+  },
+  {
+    "name": "vibe",
+    "price": "0.457160"
+  },
+  {
+    "name": "raiblocks",
+    "price": "12.05"
+  },
+  {
+    "name": "zilliqa",
+    "price": "0.051615"
+  },
+  {
+    "name": "nubits",
+    "price": "1.01"
+  },
+  {
+    "name": "nem",
+    "price": "0.400082"
+  },
+  {
+    "name": "loopring",
+    "price": "0.644936"
+  },
+  {
+    "name": "nuls",
+    "price": "3.07"
+  },
+  {
+    "name": "viberate",
+    "price": "0.233422"
+  },
+  {
+    "name": "yoyow",
+    "price": "0.132644"
+  },
+  {
+    "name": "walton",
+    "price": "21.95"
+  },
+  {
+    "name": "dogecoin",
+    "price": "0.006291"
+  },
+  {
+    "name": "stratis",
+    "price": "7.38"
+  },
+  {
+    "name": "spectre-utility",
+    "price": "0.407488"
+  },
+  {
+    "name": "nebulas-token",
+    "price": "7.74"
+  },
+  {
+    "name": "bitbean",
+    "price": "0.022107"
+  },
+  {
+    "name": "qunqun",
+    "price": "0.059186"
+  },
+  {
+    "name": "everex",
+    "price": "2.34"
+  },
+  {
+    "name": "linkeye",
+    "price": "0.067523"
+  },
+  {
+    "name": "ripio-credit-network",
+    "price": "0.146084"
+  },
+  {
+    "name": "theta-token",
+    "price": "0.125276"
+  },
+  {
+    "name": "wax",
+    "price": "0.319308"
+  },
+  {
+    "name": "aidoc",
+    "price": "0.074782"
+  },
+  {
+    "name": "digitalnote",
+    "price": "0.019822"
+  },
+  {
+    "name": "ruff",
+    "price": "0.108914"
+  },
+  {
+    "name": "adex",
+    "price": "1.57"
+  },
+  {
+    "name": "topchain",
+    "price": "0.038963"
+  },
+  {
+    "name": "data",
+    "price": "0.019337"
+  },
+  {
+    "name": "gxshares",
+    "price": "3.97"
+  },
+  {
+    "name": "decentraland",
+    "price": "0.104593"
+  },
+  {
+    "name": "chainlink",
+    "price": "0.688609"
+  },
+  {
+    "name": "0x",
+    "price": "0.957137"
+  },
+  {
+    "name": "neblio",
+    "price": "14.08"
+  },
+  {
+    "name": "genaro-network",
+    "price": "0.347020"
+  },
+  {
+    "name": "bread",
+    "price": "0.823824"
+  },
+  {
+    "name": "santiment",
+    "price": "2.08"
+  },
+  {
+    "name": "suncontract",
+    "price": "0.202202"
+  },
+  {
+    "name": "bytecoin-bcn",
+    "price": "0.004583"
+  },
+  {
+    "name": "ethlend",
+    "price": "0.102171"
+  },
+  {
+    "name": "siacoin",
+    "price": "0.021326"
+  },
+  {
+    "name": "basic-attention-token",
+    "price": "0.359920"
+  },
+  {
+    "name": "viacoin",
+    "price": "2.85"
+  }
+]

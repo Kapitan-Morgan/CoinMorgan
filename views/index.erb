@@ -1,6 +1,5 @@
-<h1>Index</h1>
-<table class="my_table">
-	<thead>
+<table class="table">
+	<thead class="table_head">
 	<tr>
 		<td>#</td>
 		<td>coin</td>
@@ -9,8 +8,8 @@
 	</thead>
 <% @parse.parse.each do |line| %>
 	<tr>
-		<td>1</td>
-		<td><%= line['name'] %></td>
+		<td><%= line['id'] %></td>
+		<td><%= line['name'].capitalize %></td>
 		<td><%= line['price'] %>$</td>
 	</tr>
 <% end %>

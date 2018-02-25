@@ -1,5 +1,44 @@
-<ul>
-<% @posts.each do |post| %>
-	<li><a href="/post/<%= post.id %>"><%= post.title %></a></li><br>
+<table class="table">
+	<thead class="table_head">
+	<tr>
+		<td>#</td>
+		<td>coin</td>
+		<td>number</td>
+		<td>price_by</td>
+		<td>сейчас стоит</td>
+		<td>%</td>
+		<td>$</td>
+	</tr>
+	</thead>
+<% @posts.each do |line| %>
+<form action="/post/<%= line.id %>" method="post">
+	<tr>
+		<td>1</td>
+		<td><%= line.name %></td>
+		<td><%= line.number %></td>
+		<td><%= line.price_by %>$</td>
+
+		<% @parse.parse.each do |par| %>
+		<% if par['name'] == line.name %>
+			<td><%= par['price'] %></td>
+			<% if line.price_by > par['price'].to_f %>
+			<% a = 100 - (par['price'].to_f/(line.price_by.to_f / 100)) %>
+			<% b =(line.price_by*line.number) - (par['price'].to_f*line.number)%>
+			<td style="color: red">-<%= format("%.2f", a) %></td>
+			<td style="color: red">-<%= format("%.2f", b) %>$</td>
+			<% else %>
+			<% a = (par['price'].to_f/(line.price_by.to_f / 100))-100 %>
+			<% b =(par['price'].to_f*line.number)-(line.price_by*line.number)%>
+			<td style="color: green"><%= format("%.2f", a) %></td>
+			<td style="color: green"><%= format("%.2f", b) %>$</td>
+			<% end %>
+		<% end %>
+		<% end %>
+		<td><%=  %></td>
+		<td><a class="btn btn-primary" href="/post/<%= line.id %>" method='get'>Show</a></td>
+  		<input type="hidden" name="_method" value="DELETE">
+ 		<td><input class="btn btn-primary" type="submit" value="Delete?"></td>
+	</tr>
+	</form>
 <% end %>
-</ul>
+</table>

@@ -13,8 +13,9 @@
 ActiveRecord::Schema.define(version: 20180224170144) do
 
   create_table "posts", force: :cascade do |t|
-    t.string "title"
-    t.text "body"
+    t.string "name"
+    t.float "number"
+    t.float "price_by"
     t.integer "owner_id"
   end
 

@@ -1,14 +1,9 @@
-<h2><%= @post.title %></h2>
-<p><%= @post.body %></p>
-<form action="/post/<%=@post.id%>" method="post">
-  <input type="hidden" name="_method" value="DELETE">
-  <input type="submit" value="Delete?">
-</form>
-
 <h2>Edit Post</h2>
 <form method="post" action="/post/<%= @post.id %>"> 
     <input type="hidden" name="_method" value="put">
-    <input type="text" name="title" value="<%= @post.title %>">
-    <input type="text" name="body" value="<%= @post.body %>">
-    <button type="submit">Update Post</button>
+    <input type="text" name="name" value="<%= @post.name %>">
+    <input type="text" name="number" value="<%= @post.number %>">
+    <input type="text" name="price_by" value="<%= @post.price_by %>">
+    <button class="btn btn-primary" type="submit">Update Post</button>
+    <a class="btn btn-primary" href="/posts/show">Назад</a>
 </form>

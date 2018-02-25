@@ -18,6 +18,8 @@ end
 #Просмотр постов пользователя
 get "/posts/show" do
 	if session[:id]
+		@parse = Parser.new
+	    get_parser
 		@user = User.find(session[:id])
 		a = Post.all
 		@posts = a.find_all{|e| e[:owner_id] == @user[:id]}
@@ -36,6 +38,8 @@ end
 get '/create' do
 	if session[:id]
 		@user = User.find(session[:id]) if session[:id]
+		@parse = Parser.new
+	    get_parser
 		erb :create
 	else 
 		erb :'users/login'
@@ -43,13 +47,26 @@ get '/create' do
 end
 
 post '/registrations' do
-	a = User.find_by(name: params[:name])
-	unless a
-		@user = User.create(name: params[:name], email: params[:email], password: params[:password])
-		session[:id] = @user.id
-		redirect '/users/home'
+	unless params[:name].empty?
+	unless params[:email].empty?
+	unless params[:password].empty?
+		a = User.find_by(name: params[:name])
+		b = User.find_by(email: params[:email])
+		unless a || b
+			@user = User.create(name: params[:name], email: params[:email], password: params[:password])
+			session[:id] = @user.id
+			redirect '/users/home'
+		else
+			erb :'eror/dont_name'
+		end
 	else
-		erb :'eror/dont_name'
+		erb :'eror/params'
+	end
+	else
+		erb :'eror/params'
+	end
+	else
+		erb :'eror/params'
 	end
 end
 
@@ -89,7 +106,7 @@ end
 post '/post' do
 	if session[:id]
 		@user = User.find(session[:id])
-		@post = Post.create(title: params[:title], body: params[:body], owner_id: @user[:id])
+		@post = Post.create(name: params[:name].downcase, number: params[:number], price_by: params[:price_by] , owner_id: @user[:id])
 		redirect '/posts/show'
 	else
 		erb :'/sessions/login'
@@ -101,9 +118,9 @@ put '/post/:id' do
 	if session[:id]
 		@post = Post.find(params[:id])
 		if @post[:owner_id] == session[:id]
-			@post.update(title: params[:title], body: params[:body])
+			@post.update(name: params[:name], number: params[:number], price_by: params[:price_by])
 			@post.save
-			redirect '/post/'+params[:id]
+			redirect '/posts/show'
 		else
 			erb :'eror/no_access'
 		end
@@ -119,7 +136,7 @@ delete '/post/:id' do
 		if @post[:owner_id] == session[:id]
 			@post = Post.find(params[:id])
 			@post.destroy
-			redirect '/'
+			redirect '/posts/show'
 		else
 			erb :'eror/no_access'
 		end
@@ -144,14 +161,16 @@ bitcoin = []
 url = 'https://www.99cryptocoin.com/ru/?gclid=CjwKCAiAtorUBRBnEiwAfcp_Y6YwRiYWPj_JLiYyB7dCVKgz1aYV7vSrsmREh7dKLkdVuBu5qhG7XBoCjVcQAvD_BwE'
 html = open(url)
 doc = Nokogiri::HTML(html)
-
+i = 0
 doc.css('tr').each do |line|
 	n = line['data-href'].to_s.split('/').last
 	pr = line.css('.js-format-price').text
 	bitcoin.push(
-	name: n,
+	id: i,
+	name: n.chomp,
 	price: pr
 	)
+	i+=1
 end
 bitcoin.shift
 File.write('storage/reviews.json', JSON.pretty_generate(bitcoin))

@@ -1,14 +1,49 @@
-.my_table {
-	border-collapse: collapse;
-	width: 100%;
+.table td{
+	width: 1px;
+	text-align: left;
+    padding: 20px 30px;
 }
-.my_table tr {
-	border-bottom: 1px solid lightgray;
-}
-.my_table td {
-
-}
-#table_head {
-	background-color: red;
+.table_head {
+	background-color: rgba(0,0,0,0.3);
+	border-radius: 20px;
 	box-sizing: border-box;
+}
+.header {
+	display: flex;
+}
+.menu {
+	display: flex;
+	list-style: none;
+	margin: 0;
+    padding: 10px 0;
+    padding-left: 20px;
+    width: 70%;
+    justify-content: flex-start;
+}
+.user{
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 10px 0;
+	padding-right: 20px;
+	width: 30%;
+	justify-content: flex-end;
+}
+
+.menu li, .user li{
+	padding: 0 20px;
+}
+
+.menu a{
+	color: #ffc450;
+}
+
+.menu a:hover{
+	color: #f3b742;
+}
+
+.menu a, .user a {
+	font-size: 18px;
+	font-weight: 400;
+    letter-spacing: 0.06em;
 }

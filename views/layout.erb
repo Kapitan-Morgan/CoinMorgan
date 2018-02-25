@@ -4,24 +4,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sinatra Blog</title>
-	<link rel="stylesheet" href="css/style.css">
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div class="container">
- <ul>
-   <li><a href="/">Home</a></li>
+<div class="header">
+ <ul class="menu">
+   <li><a href="/">Главная</a></li>
+   <li><a href="/update/index">Обновить</a></li>
    <% unless @user.nil? %>
+   	<li><a href="/create">Добавить запись</a></li>
+   	<li><a href="/posts/show">Портфель</a></li>
+   	</ul>
+   <ul class="user">
    	<li><a href="/users/home"><%= @user.name %></a></li>
    	<li><a href="/sessions/logout">Log Out</a></li>
-   	<li><a href="/create">create Post</a></li>
-   	<li><a href="/posts/show">Портфель</a></li>
+   </ul>
    <% else %>
-   	<li><a href="/registrations/signup">Sign up</a></li>
+   </ul>
+    <ul class="user">
+ 	<li><a href="/registrations/signup">Sign up</a></li>
    	<li><a href="/sessions/login">Log In</a></li>
-   	<li><a href="/update/index">Обновить</a></li>
+   	</ul>
    <% end %>
- </ul>
+ </div>
  <%= yield %>
 </div>
 </body>

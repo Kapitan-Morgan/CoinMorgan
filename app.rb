@@ -2,22 +2,24 @@ require 'sinatra'
 require 'open-uri'
 require 'nokogiri'
 require 'json'
+require 'bcrypt'
 require 'sinatra/activerecord'
 require "./models/models.rb"
 require "./models/users.rb"
+require './helpers/user_helper.rb'
 
 enable :sessions
 
-before do
-	@user = User.find(session[:id]) if session[:id]
-end
-
+#-----ГЛАВНАЯ-----
 get '/' do
+	current_user
 	#@user = User.find(session[:id]) if session[:id]
 	@parse = Parser.new
 	get_parser
 	erb :index
 end
+
+#-----POST-----
 
 #Просмотр постов пользователя
 get "/posts/show" do
@@ -32,13 +34,36 @@ get "/posts/show" do
 		erb :'users/login'
 	end
 end
-
+#-----ПРОСМОТР КОНКРЕТНОГО ПОСТА-----
 get '/post/:id' do
-	#@user = User.find(session[:id]) if session[:id]
-	@post = Post.find(params[:id])
-	erb :post_page
+	if session[:id]
+		@post = Post.find(params[:id])
+		if @post[:owner_id] == session[:id]
+			@post = Post.find(params[:id])
+			erb :post_page
+		else
+			erb :'eror/no_access'
+		end
+	else
+		erb :'eror/no_access'
+	end
 end
-
+#-----ИЗМЕНЕНИЕ ПОСТА-----
+put '/post/:id' do
+	if session[:id]
+		@post = Post.find(params[:id])
+		if @post[:owner_id] == session[:id]
+			@post.update(name: params[:name], number: params[:number], price_by: params[:price_by])
+			@post.save
+			redirect '/posts/show'
+		else
+			erb :'eror/no_access'
+		end
+	else
+		erb :'/sessions/login'
+	end
+end
+#-----ВЬЮХА СОЗДАНИЯ ПОСТА-----
 get '/create' do
 	if session[:id]
 		@user = User.find(session[:id]) if session[:id]
@@ -50,14 +75,44 @@ get '/create' do
 	end
 end
 
+#-----КОНТРОЛЛЕР СОЗДАНИЯ ПОСТА-----
+post '/post' do
+	if session[:id]
+		@user = User.find(session[:id])
+		@post = Post.create(name: params[:name].downcase, number: params[:number], price_by: params[:price_by] , owner_id: @user[:id])
+		redirect '/posts/show'
+	else
+		erb :'/sessions/login'
+	end
+end
+
+#-----УДАЛЕНИЕ ПОСТА-----
+delete '/post/:id' do
+	if session[:id]
+		@post = Post.find(params[:id])	
+		if @post[:owner_id] == session[:id]
+			@post = Post.find(params[:id])
+			@post.destroy
+			redirect '/posts/show'
+		else
+			erb :'eror/no_access'
+		end
+	else
+		erb :'eror/no_access'
+	end
+end 
+
+#-----USER-----
+
+#-----РЕГИСТРАЦИЯ ПОЛЬЗОВАТЕЛЯ-----
 post '/registrations' do
-	unless params[:name].empty?
+	unless params[:username].empty?
 	unless params[:email].empty?
 	unless params[:password].empty?
-		a = User.find_by(name: params[:name])
+		a = User.find_by(username: params[:username])
 		b = User.find_by(email: params[:email])
 		unless a || b
-			@user = User.create(name: params[:name], email: params[:email], password: params[:password])
+			@user = User.create(username: params[:username], password: params[:password], password_confirmation: params[:confirm_password], email: params[:email])
 			session[:id] = @user.id
 			redirect '/users/home'
 		else
@@ -73,80 +128,38 @@ post '/registrations' do
 		erb :'eror/params'
 	end
 end
-
+#-----ВХОД В АККАУНТ-----
+post '/sessions' do
+	user = User.find_by(email: params[:email])
+  if user && user.authenticate(params[:password])
+  	puts '------'
+   session[:id] = user.id
+   redirect to '/'
+	else
+		erb :'eror/session_eror'
+  end
+end
+#-----ВЫХОД ИЗ СЕССИИ-----
+get '/sessions/logout' do
+	session.clear
+	redirect '/'
+end
+#-----ДОМАШНЯЯ СТРАНИЦА ПОЛЬЗОВАТЕЛЯ
 get '/users/home' do
 	#@user = User.find(session[:id]) if session[:id]
 	erb :'users/home'
 end
-
+#-----ВЬЮХА РЕГИСТРАЦИИИ-----
 get '/registrations/signup' do
 	#@user = User.find(session[:id]) if session[:id]
 	erb :registrations
 end
-
+#-----ВЬЮХА ВХОДА В АККАУНТ-----
 get '/sessions/login' do
 	#@user = User.find(session[:id]) if session[:id]
 	puts session
 	erb :'users/login'
 end
-
-post '/sessions' do
-	@user = User.find_by(email: params[:email], password: params[:password])
-	if @user != nil
-		session[:id] = @user.id
-		redirect 'users/home'
-	else
-		erb :'eror/session_eror'
-	end
-end
-
-get '/sessions/logout' do
-	session.clear
-	redirect '/'
-end
-
-# create post
-post '/post' do
-	if session[:id]
-		@user = User.find(session[:id])
-		@post = Post.create(name: params[:name].downcase, number: params[:number], price_by: params[:price_by] , owner_id: @user[:id])
-		redirect '/posts/show'
-	else
-		erb :'/sessions/login'
-	end
-end
-
-# update post
-put '/post/:id' do
-	if session[:id]
-		@post = Post.find(params[:id])
-		if @post[:owner_id] == session[:id]
-			@post.update(name: params[:name], number: params[:number], price_by: params[:price_by])
-			@post.save
-			redirect '/posts/show'
-		else
-			erb :'eror/no_access'
-		end
-	else
-		erb :'/sessions/login'
-	end
-end
-
-# delete post
-delete '/post/:id' do
-	if session[:id]
-		@post = Post.find(params[:id])	
-		if @post[:owner_id] == session[:id]
-			@post = Post.find(params[:id])
-			@post.destroy
-			redirect '/posts/show'
-		else
-			erb :'eror/no_access'
-		end
-	else
-		erb :'eror/no_access'
-	end
-end 
 
 #-----PARSER-----
 

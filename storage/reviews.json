@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "bitcoin",
-    "price": "9727.62"
+    "price": "10232.65"
   },
   {
     "id": 2,
@@ -12,486 +12,486 @@
   {
     "id": 3,
     "name": "ethereum",
-    "price": "862.05"
+    "price": "867.97"
   },
   {
     "id": 4,
     "name": "litecoin",
-    "price": "225.20"
+    "price": "221.77"
   },
   {
     "id": 5,
     "name": "ethereum-classic",
-    "price": "34.96"
+    "price": "36.05"
   },
   {
     "id": 6,
     "name": "ripple",
-    "price": "0.927851"
+    "price": "0.953765"
   },
   {
     "id": 7,
     "name": "bitcoin-cash",
-    "price": "1183.08"
+    "price": "1241.47"
   },
   {
     "id": 8,
-    "name": "eos",
-    "price": "7.86"
+    "name": "neo",
+    "price": "132.48"
   },
   {
     "id": 9,
-    "name": "tron",
-    "price": "0.039533"
+    "name": "eos",
+    "price": "8.29"
   },
   {
     "id": 10,
-    "name": "neo",
-    "price": "129.80"
+    "name": "tron",
+    "price": "0.041277"
   },
   {
     "id": 11,
-    "name": "huobi-token",
-    "price": "2.24"
+    "name": "qtum",
+    "price": "28.83"
   },
   {
     "id": 12,
-    "name": "vechain",
-    "price": "5.51"
+    "name": "nano",
+    "price": "13.65"
   },
   {
     "id": 13,
-    "name": "nano",
-    "price": "12.16"
+    "name": "huobi-token",
+    "price": "2.30"
   },
   {
     "id": 14,
-    "name": "cardano",
-    "price": "0.312403"
+    "name": "vechain",
+    "price": "5.38"
   },
   {
     "id": 15,
-    "name": "elastos",
-    "price": "71.43"
+    "name": "cardano",
+    "price": "0.324724"
   },
   {
     "id": 16,
-    "name": "blockmason",
-    "price": "1.17"
+    "name": "elastos",
+    "price": "77.08"
   },
   {
     "id": 17,
     "name": "dash",
-    "price": "591.98"
+    "price": "616.83"
   },
   {
     "id": 18,
-    "name": "digixdao",
-    "price": "409.25"
+    "name": "hshare",
+    "price": "9.52"
   },
   {
     "id": 19,
-    "name": "hshare",
-    "price": "9.51"
+    "name": "blockmason",
+    "price": "1.16"
   },
   {
     "id": 20,
     "name": "icon",
-    "price": "4.06"
+    "price": "4.00"
   },
   {
     "id": 21,
-    "name": "iota",
-    "price": "1.81"
+    "name": "binance-coin",
+    "price": "9.83"
   },
   {
     "id": 22,
-    "name": "binance-coin",
-    "price": "9.37"
+    "name": "zcash",
+    "price": "406.34"
   },
   {
     "id": 23,
-    "name": "zcash",
-    "price": "400.21"
+    "name": "digixdao",
+    "price": "409.50"
   },
   {
     "id": 24,
-    "name": "qtum",
-    "price": "25.74"
+    "name": "monero",
+    "price": "290.62"
   },
   {
     "id": 25,
-    "name": "monero",
-    "price": "278.11"
+    "name": "iota",
+    "price": "1.85"
   },
   {
     "id": 26,
     "name": "hyper-pay",
-    "price": "0.045264"
+    "price": "0.055265"
   },
   {
     "id": 27,
-    "name": "iostoken",
-    "price": "0.033575"
+    "name": "stellar",
+    "price": "0.358232"
   },
   {
     "id": 28,
-    "name": "stellar",
-    "price": "0.347693"
+    "name": "iostoken",
+    "price": "0.035122"
   },
   {
     "id": 29,
     "name": "omisego",
-    "price": "16.54"
+    "price": "17.48"
   },
   {
     "id": 30,
     "name": "odyssey",
-    "price": "0.016472"
+    "price": "0.016618"
   },
   {
     "id": 31,
-    "name": "singulardtv",
-    "price": "0.113158"
+    "name": "lisk",
+    "price": "20.51"
   },
   {
     "id": 32,
-    "name": "lisk",
-    "price": "19.62"
+    "name": "zclassic",
+    "price": "114.83"
   },
   {
     "id": 33,
-    "name": "ink",
-    "price": "0.182692"
+    "name": "aeron",
+    "price": "2.87"
   },
   {
     "id": 34,
-    "name": "educare",
-    "price": "0.144409"
+    "name": "swftcoin",
+    "price": "0.017865"
   },
   {
     "id": 35,
-    "name": "swftcoin",
-    "price": "0.017039"
+    "name": "ink",
+    "price": "0.191158"
   },
   {
     "id": 36,
     "name": "ins-ecosystem",
-    "price": "2.20"
+    "price": "2.29"
   },
   {
     "id": 37,
-    "name": "aeron",
-    "price": "2.57"
+    "name": "bitcoin-gold",
+    "price": "117.49"
   },
   {
     "id": 38,
-    "name": "zclassic",
-    "price": "114.58"
+    "name": "waves",
+    "price": "6.73"
   },
   {
     "id": 39,
-    "name": "waves",
-    "price": "6.58"
+    "name": "educare",
+    "price": "0.151832"
   },
   {
     "id": 40,
-    "name": "bitcoin-gold",
-    "price": "114.65"
+    "name": "singulardtv",
+    "price": "0.115458"
   },
   {
     "id": 41,
-    "name": "reddcoin",
-    "price": "0.010100"
+    "name": "adx-net",
+    "price": "1.50"
   },
   {
     "id": 42,
-    "name": "adx-net",
-    "price": "1.46"
+    "name": "verge",
+    "price": "0.060882"
   },
   {
     "id": 43,
-    "name": "bitbean",
-    "price": "0.020894"
+    "name": "aelf",
+    "price": "1.19"
   },
   {
     "id": 44,
-    "name": "verge",
-    "price": "0.057945"
+    "name": "coindash",
+    "price": "0.105293"
   },
   {
     "id": 45,
-    "name": "red-pulse",
-    "price": "0.180830"
+    "name": "reddcoin",
+    "price": "0.010016"
   },
   {
     "id": 46,
-    "name": "sirin-labs-token",
-    "price": "0.671602"
+    "name": "red-pulse",
+    "price": "0.181205"
   },
   {
     "id": 47,
     "name": "iot-chain",
-    "price": "2.12"
+    "price": "2.13"
   },
   {
     "id": 48,
-    "name": "coindash",
-    "price": "0.112389"
+    "name": "0x",
+    "price": "1.01"
   },
   {
     "id": 49,
-    "name": "aelf",
-    "price": "1.12"
+    "name": "bitbean",
+    "price": "0.020930"
   },
   {
     "id": 50,
-    "name": "bibox-token",
-    "price": "0.740431"
+    "name": "sirin-labs-token",
+    "price": "0.667010"
   },
   {
     "id": 51,
-    "name": "0x",
-    "price": "0.968736"
+    "name": "propy",
+    "price": "1.44"
   },
   {
     "id": 52,
-    "name": "revain",
-    "price": "2.26"
+    "name": "golem-network-tokens",
+    "price": "0.381208"
   },
   {
     "id": 53,
-    "name": "wings",
-    "price": "0.743168"
+    "name": "bibox-token",
+    "price": "0.770889"
   },
   {
     "id": 54,
-    "name": "propy",
-    "price": "1.28"
+    "name": "revain",
+    "price": "2.34"
   },
   {
     "id": 55,
-    "name": "zilliqa",
-    "price": "0.052997"
+    "name": "nem",
+    "price": "0.398904"
   },
   {
     "id": 56,
-    "name": "metal",
-    "price": "4.01"
+    "name": "gifto",
+    "price": "0.382207"
   },
   {
     "id": 57,
-    "name": "golem-network-tokens",
-    "price": "0.389237"
+    "name": "bytom",
+    "price": "0.341520"
   },
   {
     "id": 58,
-    "name": "nubits",
-    "price": "1.000000"
+    "name": "dogecoin",
+    "price": "0.006430"
   },
   {
     "id": 59,
-    "name": "modum",
-    "price": "2.88"
+    "name": "zilliqa",
+    "price": "0.052943"
   },
   {
     "id": 60,
-    "name": "bytom",
-    "price": "0.330127"
+    "name": "theta-token",
+    "price": "0.122503"
   },
   {
     "id": 61,
-    "name": "gifto",
-    "price": "0.374100"
+    "name": "rlc",
+    "price": "1.45"
   },
   {
     "id": 62,
-    "name": "lunyr",
-    "price": "19.66"
+    "name": "nubits",
+    "price": "0.995611"
   },
   {
     "id": 63,
-    "name": "dogecoin",
-    "price": "0.006167"
+    "name": "enjin-coin",
+    "price": "0.191977"
   },
   {
     "id": 64,
-    "name": "nem",
-    "price": "0.391920"
+    "name": "walton",
+    "price": "21.88"
   },
   {
     "id": 65,
-    "name": "appcoins",
-    "price": "0.729855"
+    "name": "nebulas-token",
+    "price": "8.21"
   },
   {
     "id": 66,
-    "name": "walton",
-    "price": "21.14"
+    "name": "gas",
+    "price": "41.55"
   },
   {
     "id": 67,
-    "name": "zeepin",
-    "price": "0.151689"
+    "name": "metal",
+    "price": "4.07"
   },
   {
     "id": 68,
-    "name": "enjin-coin",
-    "price": "0.184021"
+    "name": "waykichain",
+    "price": "0.435413"
   },
   {
     "id": 69,
-    "name": "nebulas-token",
-    "price": "7.73"
+    "name": "modum",
+    "price": "2.87"
   },
   {
     "id": 70,
-    "name": "wax",
-    "price": "0.304150"
+    "name": "appcoins",
+    "price": "0.728367"
   },
   {
     "id": 71,
     "name": "viberate",
-    "price": "0.219851"
+    "price": "0.225572"
   },
   {
     "id": 72,
-    "name": "theta-token",
-    "price": "0.116490"
+    "name": "zeepin",
+    "price": "0.150387"
   },
   {
     "id": 73,
-    "name": "ripio-credit-network",
-    "price": "0.140451"
+    "name": "wings",
+    "price": "0.753247"
   },
   {
     "id": 74,
-    "name": "data",
-    "price": "0.018136"
+    "name": "linkeye",
+    "price": "0.070569"
   },
   {
     "id": 75,
-    "name": "salt",
-    "price": "4.09"
+    "name": "data",
+    "price": "0.018668"
   },
   {
     "id": 76,
-    "name": "siacoin",
-    "price": "0.021279"
+    "name": "ripio-credit-network",
+    "price": "0.142370"
   },
   {
     "id": 77,
+    "name": "wax",
+    "price": "0.324188"
+  },
+  {
+    "id": 78,
+    "name": "siacoin",
+    "price": "0.022125"
+  },
+  {
+    "id": 79,
+    "name": "lunyr",
+    "price": "20.12"
+  },
+  {
+    "id": 80,
+    "name": "qunqun",
+    "price": "0.059011"
+  },
+  {
+    "id": 81,
+    "name": "gxshares",
+    "price": "4.13"
+  },
+  {
+    "id": 82,
     "name": "everex",
     "price": "2.35"
   },
   {
-    "id": 78,
-    "name": "qunqun",
-    "price": "0.056900"
-  },
-  {
-    "id": 79,
-    "name": "wepower",
-    "price": "0.178107"
-  },
-  {
-    "id": 80,
-    "name": "ruff",
-    "price": "0.106534"
-  },
-  {
-    "id": 81,
-    "name": "pivx",
-    "price": "5.16"
-  },
-  {
-    "id": 82,
-    "name": "linkeye",
-    "price": "0.066152"
-  },
-  {
     "id": 83,
-    "name": "nuls",
-    "price": "2.76"
+    "name": "salt",
+    "price": "4.17"
   },
   {
     "id": 84,
     "name": "jibrel-network",
-    "price": "0.429848"
+    "price": "0.427952"
   },
   {
     "id": 85,
-    "name": "gxshares",
-    "price": "3.89"
+    "name": "ruff",
+    "price": "0.111898"
   },
   {
     "id": 86,
-    "name": "gas",
-    "price": "40.91"
+    "name": "genesis-vision",
+    "price": "24.87"
   },
   {
     "id": 87,
-    "name": "status",
-    "price": "0.166498"
+    "name": "wepower",
+    "price": "0.171059"
   },
   {
     "id": 88,
-    "name": "chainlink",
-    "price": "0.665046"
+    "name": "stratis",
+    "price": "7.31"
   },
   {
     "id": 89,
-    "name": "aion",
-    "price": "3.13"
+    "name": "status",
+    "price": "0.169700"
   },
   {
     "id": 90,
-    "name": "nework",
-    "price": "0.063980"
+    "name": "aidoc",
+    "price": "0.075809"
   },
   {
     "id": 91,
-    "name": "bread",
-    "price": "0.768746"
+    "name": "nuls",
+    "price": "2.83"
   },
   {
     "id": 92,
-    "name": "stratis",
-    "price": "7.22"
+    "name": "nework",
+    "price": "0.066228"
   },
   {
     "id": 93,
-    "name": "medishares",
-    "price": "0.185541"
+    "name": "topchain",
+    "price": "0.043156"
   },
   {
     "id": 94,
-    "name": "decentraland",
-    "price": "0.106250"
+    "name": "santiment",
+    "price": "2.14"
   },
   {
     "id": 95,
-    "name": "aidoc",
-    "price": "0.072531"
+    "name": "decentraland",
+    "price": "0.111326"
   },
   {
     "id": 96,
-    "name": "neblio",
-    "price": "13.55"
+    "name": "raiblocks",
+    "price": "13.53"
   },
   {
     "id": 97,
-    "name": "substratum",
-    "price": "0.547640"
+    "name": "bread",
+    "price": "0.799197"
   },
   {
     "id": 98,
-    "name": "topchain",
-    "price": "0.039044"
+    "name": "spectre-utility",
+    "price": "0.430557"
   },
   {
     "id": 99,
-    "name": "adex",
-    "price": "1.46"
+    "name": "substratum",
+    "price": "0.540879"
   }
 ]

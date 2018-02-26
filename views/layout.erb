@@ -13,12 +13,12 @@
  <ul class="menu">
    <li><a href="/">Главная</a></li>
    <li><a href="/update/index">Обновить</a></li>
-   <% unless @user.nil? %>
+   <% if current_user %>
    	<li><a href="/create">Добавить запись</a></li>
    	<li><a href="/posts/show">Портфель</a></li>
    	</ul>
    <ul class="user">
-   	<li><a href="/users/home"><%= @user.name %></a></li>
+   	<li><a href="/users/home"><%= current_user.username %></a></li>
    	<li><a href="/sessions/logout">Log Out</a></li>
    </ul>
    <% else %>

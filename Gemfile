@@ -5,6 +5,7 @@ gem "rake"  # so we can run Rake tasks
 gem "sinatra-activerecord"    # for Active Record models
 gem 'nokogiri'
 gem 'json'
+gem 'bcrypt'
 
 group :production do
 	gem 'pg'

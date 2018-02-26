@@ -8,8 +8,12 @@ require "./models/users.rb"
 
 enable :sessions
 
-get '/' do
+before do
 	@user = User.find(session[:id]) if session[:id]
+end
+
+get '/' do
+	#@user = User.find(session[:id]) if session[:id]
 	@parse = Parser.new
 	get_parser
 	erb :index
@@ -30,7 +34,7 @@ get "/posts/show" do
 end
 
 get '/post/:id' do
-	@user = User.find(session[:id]) if session[:id]
+	#@user = User.find(session[:id]) if session[:id]
 	@post = Post.find(params[:id])
 	erb :post_page
 end
@@ -71,18 +75,17 @@ post '/registrations' do
 end
 
 get '/users/home' do
-	puts session[:id]
-	@user = User.find(session[:id]) if session[:id]
+	#@user = User.find(session[:id]) if session[:id]
 	erb :'users/home'
 end
 
 get '/registrations/signup' do
-	@user = User.find(session[:id]) if session[:id]
+	#@user = User.find(session[:id]) if session[:id]
 	erb :registrations
 end
 
 get '/sessions/login' do
-	@user = User.find(session[:id]) if session[:id]
+	#@user = User.find(session[:id]) if session[:id]
 	puts session
 	erb :'users/login'
 end

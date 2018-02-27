@@ -20,7 +20,7 @@
 
 		<% @parse.parse.each do |par| %>
 		<% if par['name'] == line.name %>
-			<td><%= par['price'] %></td>
+			<td><%= par['price'] %>$</td>
 			<% if line.price_by > par['price'].to_f %>
 			<% a = 100 - (par['price'].to_f/(line.price_by.to_f / 100)) %>
 			<% b =(line.price_by*line.number) - (par['price'].to_f*line.number)%>

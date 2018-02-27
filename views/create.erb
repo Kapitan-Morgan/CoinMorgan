@@ -1,23 +1,13 @@
-
-
 <h2>Дабавление монеты</h2>
 <form method="post" action="/post"> 
-    <input type="hidden" value="post">
-    <input type="text" name="name" placeholder="coin ex: bitcoin">
-    <input type="text" name="number" placeholder="Колличество">
-    <input type="text" name="price_by" placeholder="Цена при покупке">
-    <button class="btn btn-primary" type="submit" name="_method" value="post">Готово</button>
-</form>
-<!--
- <form action="/post" method="post">
-   <select id="sel">
+	<select name="name">
     <option disabled>coin</option>
     <% @parse.parse.each do |line| %>
     <option name="name"><%= line['name'] %></option>
     <% end %>
    </select>
-   <input type="text" name="number">
-    <input type="text" name="price_by">
-    <input type="submit" name="_method" value="post">
-  </form>
--->
+    <input type="hidden" value="post">
+    <input type="text" name="number" placeholder="Колличество">
+    <input type="text" name="price_by" placeholder="Цена при покупке">
+    <button class="btn btn-primary" type="submit" name="_method" value="post">Готово</button>
+</form>

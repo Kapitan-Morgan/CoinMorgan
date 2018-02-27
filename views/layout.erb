@@ -4,8 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sinatra Blog</title>
+	 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	 <link rel="stylesheet" type="text/css" href="css/style.css">
+	 <link rel="stylesheet" type="text/css" href="/style.css "/>
 </head>
 <body>
 	<div class="container">
@@ -14,7 +16,9 @@
    <li><a href="/">Главная</a></li>
    <li><a href="/update/index">Обновить</a></li>
    <% if current_user %>
-   	<li><a href="/create">Добавить запись</a></li>
+   	<li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Новая запись 
+</button></li>
    	<li><a href="/posts/show">Портфель</a></li>
    	</ul>
    <ul class="user">
@@ -29,6 +33,33 @@
    	</ul>
    <% end %>
  </div>
+ <!-- Modal default -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Modal default alert</h4>
+      </div>
+      <div class="modal-body">
+       <form method="post" action="/post"> 
+	<select name="name">
+    <option disabled>coin</option>
+    <% @parse.parse.each do |line| %>
+    <option name="name"><%= line['name'] %></option>
+    <% end %>
+   </select>
+    <input type="hidden" value="post">
+    <input type="text" name="number" placeholder="Колличество">
+    <input type="text" name="price_by" placeholder="Цена при покупке">
+    <button class="btn btn-primary" type="submit" name="_method" value="post">Готово</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
  <%= yield %>
 </div>
 </body>

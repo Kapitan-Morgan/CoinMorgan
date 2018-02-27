@@ -8,12 +8,15 @@
 		<td>сейчас стоит</td>
 		<td>%</td>
 		<td>$</td>
+		<td></td>
+		<td></td>
+		<td></td>
 	</tr>
 	</thead>
 <% @posts.each do |line| %>
-<form action="/post/<%= line.id %>" method="post">
+<tbody action="/post/<%= line.id %>" method="post">
 	<tr>
-		<td>1</td>
+		<td><%= line.id %></td>
 		<td><%= line.name %></td>
 		<td><%= line.number %></td>
 		<td><%= line.price_by %>$</td>
@@ -39,6 +42,16 @@
   		<input type="hidden" name="_method" value="DELETE">
  		<td><input class="btn btn-primary" type="submit" value="Delete?"></td>
 	</tr>
-	</form>
+	</tbody>
 <% end %>
 </table>
+
+
+
+
+
+
+
+
+
+

@@ -9,7 +9,10 @@ require "./models/users.rb"
 require './helpers/user_helper.rb'
 
 enable :sessions
-
+before do
+	@parse = Parser.new
+	get_parser
+end
 #-----ГЛАВНАЯ-----
 get '/' do
 	current_user

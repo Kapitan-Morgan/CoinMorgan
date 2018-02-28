@@ -38,9 +38,15 @@
 		<% end %>
 		<% end %>
 		<td><%=  %></td>
-		<td><a class="btn btn-primary" href="/post/<%= line.id %>" method='get'>Show</a></td>
-  		<input type="hidden" name="_method" value="DELETE">
- 		<td><input class="btn btn-primary" type="submit" value="Delete?"></td>
+		<td>
+			<a class="btn btn-primary" href="/post/<%= line.id %>" method='get'>Show</a>
+		</td>
+		<td>
+  		<form action="/post/<%= line.id%>" method="post">
+  			<input type="hidden" name="_method" value="DELETE">
+  			<input class="btn btn-primary" type="submit" value="Delete?">
+		</form>
+ 		</td>
 	</tr>
 	</tbody>
 <% end %>

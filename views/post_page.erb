@@ -1,3 +1,18 @@
+
+<form action="/post/<%=@post.id%>" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete?">
+</form>
+
+<h2>Edit Post</h2>
+<form method="post" action="/post/<%= @post.id %>"> 
+    <input type="hidden" name="_method" value="put">
+    <input type="text" name="name" value="<%= @post.name %>">
+    <input type="text" name="number" value="<%= @post.number %>">
+    <input type="text" name="price_by" value="<%= @post.price_by %>">
+    <button type="submit">Update Post</button>
+</form>
+
 <h2>Edit Post</h2>
 <form method="post" action="/post/<%= @post.id %>"> 
     <input type="hidden" name="_method" value="put">

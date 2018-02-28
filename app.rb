@@ -32,6 +32,7 @@ get "/posts/show" do
 		@user = User.find(session[:id])
 		a = Post.all
 		@posts = a.find_all{|e| e[:owner_id] == @user[:id]}
+		puts @post
 		erb :'posts/show'
 	else 
 		erb :'users/login'

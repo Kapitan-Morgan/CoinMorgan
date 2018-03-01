@@ -25,18 +25,18 @@ tr:hover{
 .user{
 	justify-content: flex-end;
 }
-#my-btn-menu{
+.my-btn-menu{
   color: #ffe484;
   background-color: #464a4e;
   border-color: #ffe484;
   cursor: pointer;
 }
-#my-btn-menu:hover{
+.my-btn-menu:hover{
   color: #464a4e;
   background-color: #ffe484;
 }
 .menu li, .user li{
-	padding: 0 20px;
+	padding: 0 10px;
   line-height: 23px;
 }
 
@@ -44,7 +44,7 @@ tr:hover{
   color: white;
 }
 .header a:hover{
-  color: #ffe484
+  color: #ffe484;
 }
 
 .menu a, .user a {
@@ -57,4 +57,25 @@ tr:hover{
     width: 100%;
     margin: 0 auto;
   }
+}
+.form-search{
+  padding-top: 4px;
+  display: inline-flex;
+}
+.form-search button{
+  margin-left: 5px;
+}
+.search{
+  width: 150px;
+  height: 30px;
+}
+.clicked {
+    background-color: #ffe484;
+}
+.table_clicked{
+  background-color: #464a4e;
+}
+.td_clicked td{
+  color: white;
+  border-color: #ffe484;
 }

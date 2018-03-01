@@ -7,7 +7,8 @@
 	 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	 <link rel="stylesheet" type="text/css" href="/style.css "/>
+	 <link rel="stylesheet" type="text/css" href="/style.css ">
+	 <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 </head>
 <body>
 	<div class="header navbar navbar-expand flex-column flex-md-row bd-navbar">
@@ -16,25 +17,38 @@
    		<li class="nav-item"><a class="nav-link" href="/update/index">Обновить</a></li>
    		<% if current_user %>
    		<li class="nav-item"><a class="nav-link" href="/posts/show">Портфель</a></li>
-   	</ul>
+   		<li class="nav-item"><button type="button" id="my-btn-menu" class="my-btn-menu btn btn-primary" data-toggle="modal" data-target="#myModal">
+  			Новая запись 
+			</button></li>
+		</ul>
    	<ul class="user col-lg-6 navbar-nav bd-navbar-nav flex-row">
    		<li class="nav-item"><a class="nav-link" href="/users/home"><%= current_user.username %></a></li>
    		<li class="nav-item"><a class="nav-link" href="/sessions/logout">Log Out</a></li>
-   		<li class="nav-item"><button type="button" id="my-btn-menu" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-  			Новая запись 
-			</button></li>
-   	</ul>
    	<% else %>
-   	</ul>
+   </ul>
     <ul class="user col-lg-6 navbar-nav bd-navbar-nav flex-row">
- 			<li class="nav-item"><button type="button" id="my-btn-menu" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
+ 			<li class="nav-item"><button type="button" class="btn btn-primary my-btn-menu" data-toggle="modal" data-target="#myModal3">
   			Регистрация
 			</button></li>
-   		<li class="nav-item"><button type="button" id="my-btn-menu" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+   		<li class="nav-item"><button type="button" class="btn btn-primary my-btn-menu" data-toggle="modal" data-target="#myModal2">
   			Вход 
 			</button></li>
+			<% end %>
+			<li>
+				<button id="submit" class="btn btn-pimary">Фон</button>
+			</li>
+			<li>
+				<form class="form-search">
+              <input class="search form-control place_for_search" placeholder="Поиск" type="text" id="text-to-find" value="" placeholder="Search" autofocus aria-label="Search">
+             <!--<input class="fas fa-search button_for_turn_back" type="button" onclick="javascript: FindOnPage('text-to-find',false); return false;" value=" " title="Отменить поиск">-->
+             <button input class="btn btn-sm btn-outline-secondary fas fa-times button_for_turn_back" type="button" onclick="javascript: FindOnPage('text-to-find',false); return false;" value=" " title="Отменить поиск">
+             </button>
+             <button class="btn btn-sm btn-outline-secondary fas fa-search button_for_search" type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;" value=" " title="Начать поиск">
+             </button>
+              <!--<input class="button_for_search" type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;" value=" " title="Начать поиск">-->
+        </form>
+			</li>
    	</ul>
-   	<% end %>
 	</div>
  <!-- Modal default -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -111,5 +125,6 @@
 <div class="container">
  <%= yield %>
 </div>
+<script src="/js/js.js"></script>
 </body>
 </html>

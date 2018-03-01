@@ -10,15 +10,6 @@
     <input type="text" name="name" value="<%= @post.name %>">
     <input type="text" name="number" value="<%= @post.number %>">
     <input type="text" name="price_by" value="<%= @post.price_by %>">
-    <button type="submit">Update Post</button>
-</form>
-
-<h2>Edit Post</h2>
-<form method="post" action="/post/<%= @post.id %>"> 
-    <input type="hidden" name="_method" value="put">
-    <input type="text" name="name" value="<%= @post.name %>">
-    <input type="text" name="number" value="<%= @post.number %>">
-    <input type="text" name="price_by" value="<%= @post.price_by %>">
     <button class="btn btn-primary" type="submit">Update Post</button>
     <a class="btn btn-primary" href="/posts/show">Назад</a>
 </form>

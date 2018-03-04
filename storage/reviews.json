@@ -2,496 +2,1090 @@
   {
     "id": 1,
     "name": "bitcoin",
-    "price": "10691.99"
+    "price": "11393.09",
+    "volume": [
+      "4874393560"
+    ],
+    "capit": [
+      "192535530664"
+    ]
   },
   {
     "id": 2,
     "name": "tether",
-    "price": "0.999609"
+    "price": "1.00",
+    "volume": [
+      "1783910569"
+    ],
+    "capit": [
+      "2217140814"
+    ]
   },
   {
     "id": 3,
     "name": "ethereum",
-    "price": "866.01"
+    "price": "865.71",
+    "volume": [
+      "1419165599"
+    ],
+    "capit": [
+      "84819315460"
+    ]
   },
   {
     "id": 4,
     "name": "litecoin",
-    "price": "208.29"
+    "price": "210.60",
+    "volume": [
+      "531990463"
+    ],
+    "capit": [
+      "11682860202"
+    ]
   },
   {
     "id": 5,
     "name": "ethereum-classic",
-    "price": "33.34"
+    "price": "29.30",
+    "volume": [
+      "466143293"
+    ],
+    "capit": [
+      "2937992747"
+    ]
   },
   {
     "id": 6,
-    "name": "bitcoin-cash",
-    "price": "1262.45"
+    "name": "ripple",
+    "price": "0.960916",
+    "volume": [
+      "353069862"
+    ],
+    "capit": [
+      "37564086670"
+    ]
   },
   {
     "id": 7,
     "name": "tron",
-    "price": "0.045644"
+    "price": "0.047935",
+    "volume": [
+      "259340923"
+    ],
+    "capit": [
+      "3151639606"
+    ]
   },
   {
     "id": 8,
-    "name": "ripple",
-    "price": "0.956216"
+    "name": "bitcoin-cash",
+    "price": "1267.54",
+    "volume": [
+      "254206550"
+    ],
+    "capit": [
+      "21547007526"
+    ]
   },
   {
     "id": 9,
-    "name": "neo",
-    "price": "127.09"
+    "name": "eos",
+    "price": "7.95",
+    "volume": [
+      "133585765"
+    ],
+    "capit": [
+      "5609112165"
+    ]
   },
   {
     "id": 10,
-    "name": "eos",
-    "price": "8.47"
+    "name": "monero",
+    "price": "364.24",
+    "volume": [
+      "115238032"
+    ],
+    "capit": [
+      "5750171284"
+    ]
   },
   {
     "id": 11,
-    "name": "huobi-token",
-    "price": "2.29"
+    "name": "dash",
+    "price": "617.75",
+    "volume": [
+      "115211867"
+    ],
+    "capit": [
+      "4896115383"
+    ]
   },
   {
     "id": 12,
-    "name": "nano",
-    "price": "15.83"
+    "name": "neo",
+    "price": "120.42",
+    "volume": [
+      "113862267"
+    ],
+    "capit": [
+      "7827300000"
+    ]
   },
   {
     "id": 13,
-    "name": "digixdao",
-    "price": "544.31"
+    "name": "huobi-token",
+    "price": "2.18",
+    "volume": [
+      "109547532"
+    ],
+    "capit": [
+      "?"
+    ]
   },
   {
     "id": 14,
-    "name": "dash",
-    "price": "595.73"
+    "name": "stellar",
+    "price": "0.354867",
+    "volume": [
+      "75113483"
+    ],
+    "capit": [
+      "6553724438"
+    ]
   },
   {
     "id": 15,
-    "name": "elastos",
-    "price": "80.91"
+    "name": "digixdao",
+    "price": "505.58",
+    "volume": [
+      "67144182"
+    ],
+    "capit": [
+      "1011160000"
+    ]
   },
   {
     "id": 16,
-    "name": "binance-coin",
-    "price": "10.34"
+    "name": "odyssey",
+    "price": "0.020664",
+    "volume": [
+      "63940032"
+    ],
+    "capit": [
+      "41328000"
+    ]
   },
   {
     "id": 17,
-    "name": "vechain",
-    "price": "4.97"
+    "name": "zcash",
+    "price": "404.11",
+    "volume": [
+      "52679886"
+    ],
+    "capit": [
+      "1376244694"
+    ]
   },
   {
     "id": 18,
-    "name": "cardano",
-    "price": "0.301471"
+    "name": "nano",
+    "price": "15.35",
+    "volume": [
+      "52438448"
+    ],
+    "capit": [
+      "2045361236"
+    ]
   },
   {
     "id": 19,
-    "name": "omisego",
-    "price": "18.74"
+    "name": "vechain",
+    "price": "4.68",
+    "volume": [
+      "43678717"
+    ],
+    "capit": [
+      "2222851995"
+    ]
   },
   {
     "id": 20,
-    "name": "zclassic",
-    "price": "21.33"
+    "name": "cardano",
+    "price": "0.295403",
+    "volume": [
+      "39118229"
+    ],
+    "capit": [
+      "7658934418"
+    ]
   },
   {
     "id": 21,
-    "name": "qtum",
-    "price": "26.20"
+    "name": "elastos",
+    "price": "77.00",
+    "volume": [
+      "38919292"
+    ],
+    "capit": [
+      "?"
+    ]
   },
   {
     "id": 22,
-    "name": "zcash",
-    "price": "389.17"
+    "name": "binance-coin",
+    "price": "10.29",
+    "volume": [
+      "35412568"
+    ],
+    "capit": [
+      "1018854060"
+    ]
   },
   {
     "id": 23,
-    "name": "monero",
-    "price": "298.18"
+    "name": "blockmason",
+    "price": "1.09",
+    "volume": [
+      "33102020"
+    ],
+    "capit": [
+      "49231158"
+    ]
   },
   {
     "id": 24,
-    "name": "iota",
-    "price": "1.96"
+    "name": "omisego",
+    "price": "18.06",
+    "volume": [
+      "32533577"
+    ],
+    "capit": [
+      "1842888489"
+    ]
   },
   {
     "id": 25,
-    "name": "salus",
-    "price": "95.00"
+    "name": "qtum",
+    "price": "25.92",
+    "volume": [
+      "32473249"
+    ],
+    "capit": [
+      "1916110184"
+    ]
   },
   {
     "id": 26,
-    "name": "viberate",
-    "price": "0.310981"
+    "name": "theta-token",
+    "price": "0.224122",
+    "volume": [
+      "28674513"
+    ],
+    "capit": [
+      "130644426"
+    ]
   },
   {
     "id": 27,
-    "name": "stellar",
-    "price": "0.339159"
+    "name": "iota",
+    "price": "1.91",
+    "volume": [
+      "26670477"
+    ],
+    "capit": [
+      "5308902841"
+    ]
   },
   {
     "id": 28,
-    "name": "walton",
-    "price": "19.03"
+    "name": "iostoken",
+    "price": "0.034311",
+    "volume": [
+      "22074588"
+    ],
+    "capit": [
+      "233112706"
+    ]
   },
   {
     "id": 29,
-    "name": "hshare",
-    "price": "9.38"
+    "name": "nem",
+    "price": "0.365353",
+    "volume": [
+      "20923775"
+    ],
+    "capit": [
+      "3288177000"
+    ]
   },
   {
     "id": 30,
-    "name": "verge",
-    "price": "0.063063"
+    "name": "waves",
+    "price": "6.87",
+    "volume": [
+      "19023308"
+    ],
+    "capit": [
+      "687000000"
+    ]
   },
   {
     "id": 31,
-    "name": "blockmason",
-    "price": "1.15"
+    "name": "aelf",
+    "price": "1.21",
+    "volume": [
+      "17717513"
+    ],
+    "capit": [
+      "302500000"
+    ]
   },
   {
     "id": 32,
-    "name": "theta-token",
-    "price": "0.164509"
+    "name": "hshare",
+    "price": "9.71",
+    "volume": [
+      "15897165"
+    ],
+    "capit": [
+      "414576490"
+    ]
   },
   {
     "id": 33,
-    "name": "lisk",
-    "price": "18.78"
+    "name": "genesis-vision",
+    "price": "36.11",
+    "volume": [
+      "14927823"
+    ],
+    "capit": [
+      "134574062"
+    ]
   },
   {
     "id": 34,
-    "name": "ink",
-    "price": "0.177195"
+    "name": "adtoken",
+    "price": "0.089048",
+    "volume": [
+      "14852183"
+    ],
+    "capit": [
+      "53428800"
+    ]
   },
   {
     "id": 35,
     "name": "icon",
-    "price": "3.73"
+    "price": "3.71",
+    "volume": [
+      "14102941"
+    ],
+    "capit": [
+      "1431935210"
+    ]
   },
   {
     "id": 36,
-    "name": "iostoken",
-    "price": "0.033346"
+    "name": "korecoin",
+    "price": "6.43",
+    "volume": [
+      "14006644"
+    ],
+    "capit": [
+      "13004450"
+    ]
   },
   {
     "id": 37,
-    "name": "waves",
-    "price": "6.51"
+    "name": "storj",
+    "price": "1.03",
+    "volume": [
+      "13535218"
+    ],
+    "capit": [
+      "137428258"
+    ]
   },
   {
     "id": 38,
-    "name": "unbreakablecoin",
-    "price": "1.47"
+    "name": "bytom",
+    "price": "0.416670",
+    "volume": [
+      "13363814"
+    ],
+    "capit": [
+      "411253290"
+    ]
   },
   {
     "id": 39,
-    "name": "neblio",
-    "price": "15.45"
+    "name": "educare",
+    "price": "0.164708",
+    "volume": [
+      "13298969"
+    ],
+    "capit": [
+      "?"
+    ]
   },
   {
     "id": 40,
-    "name": "ion",
-    "price": "4.96"
+    "name": "metal",
+    "price": "5.35",
+    "volume": [
+      "13231005"
+    ],
+    "capit": [
+      "103260318"
+    ]
   },
   {
     "id": 41,
-    "name": "bitcoin-gold",
-    "price": "114.38"
+    "name": "ink",
+    "price": "0.163030",
+    "volume": [
+      "12612864"
+    ],
+    "capit": [
+      "75631333"
+    ]
   },
   {
     "id": 42,
-    "name": "sirin-labs-token",
-    "price": "0.586035"
+    "name": "lisk",
+    "price": "18.76",
+    "volume": [
+      "11964398"
+    ],
+    "capit": [
+      "1922141252"
+    ]
   },
   {
     "id": 43,
-    "name": "bibox-token",
-    "price": "0.752292"
+    "name": "walton",
+    "price": "19.07",
+    "volume": [
+      "11713543"
+    ],
+    "capit": [
+      "474808254"
+    ]
   },
   {
     "id": 44,
-    "name": "educare",
-    "price": "0.158670"
+    "name": "medical-chain",
+    "price": "0.240496",
+    "volume": [
+      "11140402"
+    ],
+    "capit": [
+      "44491760"
+    ]
   },
   {
     "id": 45,
-    "name": "metal",
-    "price": "4.75"
+    "name": "swftcoin",
+    "price": "0.016944",
+    "volume": [
+      "11101443"
+    ],
+    "capit": [
+      "29652000"
+    ]
   },
   {
     "id": 46,
-    "name": "aelf",
-    "price": "1.15"
+    "name": "bitcoin-gold",
+    "price": "109.50",
+    "volume": [
+      "10681086"
+    ],
+    "capit": [
+      "1846142516"
+    ]
   },
   {
     "id": 47,
-    "name": "lunyr",
-    "price": "23.41"
+    "name": "raiblocks",
+    "price": "15.35",
+    "volume": [
+      "10523185"
+    ],
+    "capit": [
+      "2045361236"
+    ]
   },
   {
     "id": 48,
-    "name": "swftcoin",
-    "price": "0.016868"
+    "name": "sirin-labs-token",
+    "price": "0.626341",
+    "volume": [
+      "10392177"
+    ],
+    "capit": [
+      "61969840"
+    ]
   },
   {
     "id": 49,
-    "name": "reddcoin",
-    "price": "0.009513"
+    "name": "verge",
+    "price": "0.056184",
+    "volume": [
+      "10361866"
+    ],
+    "capit": [
+      "824049353"
+    ]
   },
   {
     "id": 50,
-    "name": "raiblocks",
-    "price": "15.79"
+    "name": "ins-ecosystem",
+    "price": "2.19",
+    "volume": [
+      "9556506"
+    ],
+    "capit": [
+      "61500066"
+    ]
   },
   {
     "id": 51,
-    "name": "sphere",
-    "price": "5.17"
+    "name": "aidoc",
+    "price": "0.069693",
+    "volume": [
+      "9481935"
+    ],
+    "capit": [
+      "?"
+    ]
   },
   {
     "id": 52,
-    "name": "odyssey",
-    "price": "0.013252"
+    "name": "propy",
+    "price": "1.26",
+    "volume": [
+      "9018153"
+    ],
+    "capit": [
+      "21087284"
+    ]
   },
   {
     "id": 53,
-    "name": "gifto",
-    "price": "0.398946"
+    "name": "zilliqa",
+    "price": "0.049344",
+    "volume": [
+      "8747913"
+    ],
+    "capit": [
+      "323647453"
+    ]
   },
   {
     "id": 54,
-    "name": "ins-ecosystem",
-    "price": "2.23"
+    "name": "dogecoin",
+    "price": "0.005442",
+    "volume": [
+      "8664974"
+    ],
+    "capit": [
+      "617378238"
+    ]
   },
   {
     "id": 55,
-    "name": "siacoin",
-    "price": "0.022691"
+    "name": "ripio-credit-network",
+    "price": "0.141268",
+    "volume": [
+      "8026174"
+    ],
+    "capit": [
+      "69042335"
+    ]
   },
   {
     "id": 56,
-    "name": "adtoken",
-    "price": "0.086531"
+    "name": "adx-net",
+    "price": "1.29",
+    "volume": [
+      "7918670"
+    ],
+    "capit": [
+      "94725604"
+    ]
   },
   {
     "id": 57,
-    "name": "nem",
-    "price": "0.413639"
+    "name": "wepower",
+    "price": "0.216707",
+    "volume": [
+      "7460328"
+    ],
+    "capit": [
+      "77081761"
+    ]
   },
   {
     "id": 58,
-    "name": "bitbean",
-    "price": "0.017738"
+    "name": "lunyr",
+    "price": "21.28",
+    "volume": [
+      "7453417"
+    ],
+    "capit": [
+      "48898312"
+    ]
   },
   {
     "id": 59,
-    "name": "adx-net",
-    "price": "1.35"
+    "name": "neblio",
+    "price": "16.27",
+    "volume": [
+      "7359412"
+    ],
+    "capit": [
+      "209975121"
+    ]
   },
   {
     "id": 60,
-    "name": "nexus",
-    "price": "2.63"
+    "name": "jibrel-network",
+    "price": "0.475812",
+    "volume": [
+      "7255441"
+    ],
+    "capit": [
+      "71371800"
+    ]
   },
   {
     "id": 61,
-    "name": "bitshares",
-    "price": "0.239930"
+    "name": "bread",
+    "price": "0.839112",
+    "volume": [
+      "7208424"
+    ],
+    "capit": [
+      "62420199"
+    ]
   },
   {
     "id": 62,
-    "name": "genesis-vision",
-    "price": "28.04"
+    "name": "adex",
+    "price": "1.30",
+    "volume": [
+      "7130281"
+    ],
+    "capit": [
+      "69229909"
+    ]
   },
   {
     "id": 63,
-    "name": "medical-chain",
-    "price": "0.240833"
+    "name": "district0x",
+    "price": "0.098083",
+    "volume": [
+      "7055677"
+    ],
+    "capit": [
+      "58849800"
+    ]
   },
   {
     "id": 64,
-    "name": "golem-network-tokens",
-    "price": "0.406409"
+    "name": "raiden-network-token",
+    "price": "2.73",
+    "volume": [
+      "6645904"
+    ],
+    "capit": [
+      "136961195"
+    ]
   },
   {
     "id": 65,
-    "name": "bytom",
-    "price": "0.344105"
+    "name": "suncontract",
+    "price": "0.315897",
+    "volume": [
+      "6520507"
+    ],
+    "capit": [
+      "36364544"
+    ]
   },
   {
     "id": 66,
-    "name": "propy",
-    "price": "1.25"
+    "name": "monaco",
+    "price": "9.29",
+    "volume": [
+      "6501035"
+    ],
+    "capit": [
+      "122586585"
+    ]
   },
   {
     "id": 67,
-    "name": "zilliqa",
-    "price": "0.048767"
+    "name": "nebulas-token",
+    "price": "8.07",
+    "volume": [
+      "6499239"
+    ],
+    "capit": [
+      "286485000"
+    ]
   },
   {
     "id": 68,
-    "name": "salt",
-    "price": "4.09"
+    "name": "stratis",
+    "price": "8.34",
+    "volume": [
+      "6451360"
+    ],
+    "capit": [
+      "823686823"
+    ]
   },
   {
     "id": 69,
-    "name": "nubits",
-    "price": "1.000000"
+    "name": "primas",
+    "price": "0.358177",
+    "volume": [
+      "6421927"
+    ],
+    "capit": [
+      "18338662"
+    ]
   },
   {
     "id": 70,
-    "name": "nework",
-    "price": "0.061666"
+    "name": "nuls",
+    "price": "3.48",
+    "volume": [
+      "6316713"
+    ],
+    "capit": [
+      "82005789"
+    ]
   },
   {
     "id": 71,
-    "name": "exclusivecoin",
-    "price": "1.87"
+    "name": "salus",
+    "price": "71.55",
+    "volume": [
+      "6294802"
+    ],
+    "capit": [
+      "72264570"
+    ]
   },
   {
     "id": 72,
-    "name": "dogecoin",
-    "price": "0.006075"
+    "name": "iconomi",
+    "price": "1.94",
+    "volume": [
+      "6278287"
+    ],
+    "capit": [
+      "193487233"
+    ]
   },
   {
     "id": 73,
-    "name": "nebulas-token",
-    "price": "8.19"
+    "name": "bitquence",
+    "price": "5.02",
+    "volume": [
+      "6227907"
+    ],
+    "capit": [
+      "374121117"
+    ]
   },
   {
     "id": 74,
-    "name": "aidoc",
-    "price": "0.074430"
+    "name": "nexus",
+    "price": "2.95",
+    "volume": [
+      "6177614"
+    ],
+    "capit": [
+      "165044261"
+    ]
   },
   {
     "id": 75,
-    "name": "jibrel-network",
-    "price": "0.491710"
+    "name": "golem-network-tokens",
+    "price": "0.435232",
+    "volume": [
+      "6173478"
+    ],
+    "capit": [
+      "363097519"
+    ]
   },
   {
     "id": 76,
-    "name": "ripio-credit-network",
-    "price": "0.145348"
+    "name": "numeraire",
+    "price": "33.68",
+    "volume": [
+      "6134434"
+    ],
+    "capit": [
+      "43364718"
+    ]
   },
   {
     "id": 77,
-    "name": "0x",
-    "price": "0.944566"
+    "name": "linkeye",
+    "price": "0.062505",
+    "volume": [
+      "6049610"
+    ],
+    "capit": [
+      "?"
+    ]
   },
   {
     "id": 78,
-    "name": "raiden-network-token",
-    "price": "2.81"
+    "name": "bibox-token",
+    "price": "0.703899",
+    "volume": [
+      "6037891"
+    ],
+    "capit": [
+      "74175515"
+    ]
   },
   {
     "id": 79,
-    "name": "linkeye",
-    "price": "0.064616"
+    "name": "nubits",
+    "price": "0.994021",
+    "volume": [
+      "5967618"
+    ],
+    "capit": [
+      "13053605"
+    ]
   },
   {
     "id": 80,
-    "name": "bytecoin-bcn",
-    "price": "0.004563"
+    "name": "iot-chain",
+    "price": "1.87",
+    "volume": [
+      "5853820"
+    ],
+    "capit": [
+      "89759594"
+    ]
   },
   {
     "id": 81,
-    "name": "wings",
-    "price": "0.740412"
+    "name": "wax",
+    "price": "0.321245",
+    "volume": [
+      "5820650"
+    ],
+    "capit": [
+      "158359180"
+    ]
   },
   {
     "id": 82,
-    "name": "iot-chain",
-    "price": "2.01"
+    "name": "ruff",
+    "price": "0.107422",
+    "volume": [
+      "5602181"
+    ],
+    "capit": [
+      "?"
+    ]
   },
   {
     "id": 83,
-    "name": "wepower",
-    "price": "0.178314"
+    "name": "gifto",
+    "price": "0.394216",
+    "volume": [
+      "5588371"
+    ],
+    "capit": [
+      "62231461"
+    ]
   },
   {
     "id": 84,
-    "name": "ruff",
-    "price": "0.109094"
+    "name": "qunqun",
+    "price": "0.054462",
+    "volume": [
+      "5446937"
+    ],
+    "capit": [
+      "25184559"
+    ]
   },
   {
     "id": 85,
-    "name": "adex",
-    "price": "1.35"
+    "name": "delphy",
+    "price": "1.80",
+    "volume": [
+      "5406862"
+    ],
+    "capit": [
+      "56550013"
+    ]
   },
   {
     "id": 86,
-    "name": "qunqun",
-    "price": "0.054406"
+    "name": "data",
+    "price": "0.018008",
+    "volume": [
+      "5228856"
+    ],
+    "capit": [
+      "76612097"
+    ]
   },
   {
     "id": 87,
-    "name": "library-credit",
-    "price": "0.464750"
+    "name": "vericoin",
+    "price": "1.14",
+    "volume": [
+      "5087417"
+    ],
+    "capit": [
+      "35151305"
+    ]
   },
   {
     "id": 88,
-    "name": "digitalnote",
-    "price": "0.019811"
+    "name": "kyber-network",
+    "price": "1.82",
+    "volume": [
+      "5019128"
+    ],
+    "capit": [
+      "244121509"
+    ]
   },
   {
     "id": 89,
-    "name": "data",
-    "price": "0.018262"
+    "name": "decentraland",
+    "price": "0.111740",
+    "volume": [
+      "4966405"
+    ],
+    "capit": [
+      "117342812"
+    ]
   },
   {
     "id": 90,
-    "name": "medishares",
-    "price": "0.208701"
+    "name": "viberate",
+    "price": "0.263236",
+    "volume": [
+      "4948650"
+    ],
+    "capit": [
+      "43477760"
+    ]
   },
   {
     "id": 91,
-    "name": "zeepin",
-    "price": "0.135797"
+    "name": "power-ledger",
+    "price": "0.584873",
+    "volume": [
+      "4847923"
+    ],
+    "capit": [
+      "212854377"
+    ]
   },
   {
     "id": 92,
-    "name": "particl",
-    "price": "28.65"
+    "name": "gxshares",
+    "price": "3.92",
+    "volume": [
+      "4833007"
+    ],
+    "capit": [
+      "235200000"
+    ]
   },
   {
     "id": 93,
-    "name": "status",
-    "price": "0.156958"
+    "name": "guppy",
+    "price": "0.419786",
+    "volume": [
+      "4832152"
+    ],
+    "capit": [
+      "31483950"
+    ]
   },
   {
     "id": 94,
-    "name": "decentraland",
-    "price": "0.107459"
+    "name": "0x",
+    "price": "0.922684",
+    "volume": [
+      "4815918"
+    ],
+    "capit": [
+      "476313948"
+    ]
   },
   {
     "id": 95,
-    "name": "stratis",
-    "price": "7.34"
+    "name": "tenx",
+    "price": "1.86",
+    "volume": [
+      "4788728"
+    ],
+    "capit": [
+      "194670037"
+    ]
   },
   {
     "id": 96,
-    "name": "populous",
-    "price": "19.75"
+    "name": "quantstamp",
+    "price": "0.237639",
+    "volume": [
+      "4666601"
+    ],
+    "capit": [
+      "146697922"
+    ]
   },
   {
     "id": 97,
-    "name": "gxshares",
-    "price": "4.08"
+    "name": "bytecoin-bcn",
+    "price": "0.004212",
+    "volume": [
+      "4606235"
+    ],
+    "capit": [
+      "774006827"
+    ]
   },
   {
     "id": 98,
-    "name": "factom",
-    "price": "33.39"
+    "name": "cindicator",
+    "price": "0.130940",
+    "volume": [
+      "4547837"
+    ],
+    "capit": [
+      "189336175"
+    ]
   },
   {
     "id": 99,
-    "name": "primas",
-    "price": "0.318017"
+    "name": "simple-token",
+    "price": "0.315343",
+    "volume": [
+      "4487313"
+    ],
+    "capit": [
+      "86053774"
+    ]
   }
 ]

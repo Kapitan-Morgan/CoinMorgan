@@ -185,10 +185,13 @@ i = 0
 doc.css('tr').each do |line|
 	n = line['data-href'].to_s.split('/').last
 	pr = line.css('.js-format-price').text
+	v = line.css('.js-format-volume').map {|e| e.text.split('>')}
 	bitcoin.push(
 	id: i,
 	name: n,
-	price: pr
+	price: pr,
+	volume: v.first,
+    capit: v.last
 	)
 	i+=1
 end

@@ -2,8 +2,10 @@
 	<thead class="table_head">
 	<tr>
 		<td>#</td>
-		<td>coin</td>
-		<td>price</td>
+		<td>Название</td>
+		<td>Цена</td>
+		<td>Обьем за 24ч</td>
+		<td>Капитализация</td>
 	</tr>
 	</thead>
 <% @parse.parse.each do |line| %>
@@ -11,6 +13,8 @@
 		<td><%= line['id'] %></td>
 		<td><%= line['name'].capitalize %></td>
 		<td><%= line['price'] %>$</td>
+		<td><%= line['volume'].first.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse %>$</td>
+		<td><%= line['capit'].first.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse %>$</td>
 	</tr>
 <% end %>
 </table>

@@ -15,7 +15,7 @@
 	
 		<td><%= line['id'] %></td>
 		<td><%= line['name'].capitalize %></td>
-		<td style="color: <%= line['color'] %>"><%= format("%.2f", line['price'])%> $</td>
+		<td><%= format("%.2f", line['price'])%> $</td>
 		<td style="color: <%= line['color'] %>"><%= line['percent']%></td>
 		<td><%= line['volue'] %></td>
 		<td><%= line['market_cap'].to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse %>$</td>

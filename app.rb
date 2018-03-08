@@ -171,6 +171,7 @@ end
 
 get '/update/index' do
 	update_parser
+	redirect '/'
 end
 
 class Parser

@@ -3,6 +3,7 @@ require 'open-uri'
 require 'nokogiri'
 require 'json'
 require 'bcrypt'
+require 'rest-client'
 require 'sinatra/activerecord'
 require "./models/models.rb"
 require "./models/users.rb"
@@ -18,6 +19,7 @@ get '/' do
 	current_user
 	#@user = User.find(session[:id]) if session[:id]
 	@parse = Parser.new
+	update_parser
 	get_parser
 	erb :index
 end
@@ -178,24 +180,33 @@ end
 	def update_parser
 bitcoin = []
 
-url = 'https://www.99cryptocoin.com/ru/?gclid=CjwKCAiAtorUBRBnEiwAfcp_Y6YwRiYWPj_JLiYyB7dCVKgz1aYV7vSrsmREh7dKLkdVuBu5qhG7XBoCjVcQAvD_BwE'
+url = 'https://www.worldcoinindex.com'
 html = open(url)
 doc = Nokogiri::HTML(html)
-i = 0
-doc.css('tr').each do |line|
-	n = line['data-href'].to_s.split('/').last
-	pr = line.css('.js-format-price').text
-	v = line.css('.js-format-volume').map {|e| e.text.split('>')}
+
+doc.css('.coinzoeken').each do |line|
+    id = line.css('.rank').text
+    name = line.at_css('h1 span').text
+    price = line.css('.span').first.text
+    price = price.to_s.gsub(',', '').to_f
+    percent = line.css('.percentage').text
+    if line.css('.percentage').to_s.include?('red')
+      color = 'red'
+    else
+      color = 'green'
+    end
+    volue = line.css('.volume').text.strip.delete(' ')
+    market_cap = line.css('.span').pop.text
 	bitcoin.push(
-	id: i,
-	name: n,
-	price: pr,
-	volume: v.first,
-    capit: v.last
+	id: id,
+	name: name,
+	price: price,
+    color: color,
+    percent: percent,
+    volue: volue,
+    market_cap: market_cap
 	)
-	i+=1
 end
-bitcoin.shift
 File.write('storage/reviews.json', JSON.pretty_generate(bitcoin))
 end
 

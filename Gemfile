@@ -6,6 +6,7 @@ gem "sinatra-activerecord"    # for Active Record models
 gem 'nokogiri'
 gem 'json'
 gem 'bcrypt'
+gem 'rest-client'
 
 group :production do
 	gem 'pg'

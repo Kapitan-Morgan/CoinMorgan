@@ -5,17 +5,20 @@
 		<td>#</td>
 		<td>Название</td>
 		<td>Цена</td>
+		<td>%</td>
 		<td>Обьем за 24ч</td>
 		<td>Капитализация</td>
 	</tr>
 	</thead>
 <% @parse.parse.each do |line| %>
 	<tr>
+	
 		<td><%= line['id'] %></td>
 		<td><%= line['name'].capitalize %></td>
-		<td><%= line['price'] %>$</td>
-		<td><%= line['volume'].first.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse %>$</td>
-		<td><%= line['capit'].first.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse %>$</td>
+		<td style="color: <%= line['color'] %>"><%= format("%.2f", line['price'])%> $</td>
+		<td style="color: <%= line['color'] %>"><%= line['percent']%></td>
+		<td><%= line['volue'] %></td>
+		<td><%= line['market_cap'].to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse %>$</td>
 	</tr>
 <% end %>
 </table>

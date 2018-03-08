@@ -1,1091 +1,902 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "name": "bitcoin",
-    "price": "11382.59",
-    "volume": [
-      "4886317722"
-    ],
-    "capit": [
-      "192358087752"
-    ]
+    "price": 9358.91,
+    "color": "red",
+    "percent": "-5.59%",
+    "volue": "$4.27B",
+    "market_cap": "157.15B"
   },
   {
-    "id": 2,
-    "name": "tether",
-    "price": "1.00",
-    "volume": [
-      "1789227176"
-    ],
-    "capit": [
-      "2217140814"
-    ]
-  },
-  {
-    "id": 3,
+    "id": "2",
     "name": "ethereum",
-    "price": "866.38",
-    "volume": [
-      "1419796976"
-    ],
-    "capit": [
-      "84884959777"
-    ]
+    "price": 710.10022,
+    "color": "red",
+    "percent": "-5.38%",
+    "volue": "$\r\n1.21B",
+    "market_cap": "68.78B"
   },
   {
-    "id": 4,
+    "id": "3",
     "name": "litecoin",
-    "price": "211.08",
-    "volume": [
-      "533210518"
-    ],
-    "capit": [
-      "11709487804"
-    ]
+    "price": 177.75866,
+    "color": "red",
+    "percent": "-4.13%",
+    "volue": "$\r\n579.01M",
+    "market_cap": "9.87B"
   },
   {
-    "id": 5,
-    "name": "ethereum-classic",
-    "price": "29.37",
-    "volume": [
-      "466388922"
-    ],
-    "capit": [
-      "2945011842"
-    ]
+    "id": "4",
+    "name": "ethereumclassic",
+    "price": 22.882183,
+    "color": "green",
+    "percent": "+4.56%",
+    "volue": "$\r\n564.66M",
+    "market_cap": "2.13B"
   },
   {
-    "id": 6,
+    "id": "5",
     "name": "ripple",
-    "price": "0.953385",
-    "volume": [
-      "355963379"
-    ],
-    "capit": [
-      "37269685144"
-    ]
+    "price": 0.81750078,
+    "color": "red",
+    "percent": "-4.11%",
+    "volue": "$\r\n439.19M",
+    "market_cap": "31.55B"
   },
   {
-    "id": 7,
-    "name": "tron",
-    "price": "0.047826",
-    "volume": [
-      "258736850"
-    ],
-    "capit": [
-      "3144473053"
-    ]
+    "id": "6",
+    "name": "bitcoincash",
+    "price": 1032.163,
+    "color": "red",
+    "percent": "-5.28%",
+    "volue": "$\r\n407.46M",
+    "market_cap": "17.21B"
   },
   {
-    "id": 8,
-    "name": "bitcoin-cash",
-    "price": "1268.61",
-    "volume": [
-      "254366619"
-    ],
-    "capit": [
-      "21565196536"
-    ]
-  },
-  {
-    "id": 9,
+    "id": "7",
     "name": "eos",
-    "price": "7.96",
-    "volume": [
-      "134172859"
-    ],
-    "capit": [
-      "5616167652"
-    ]
+    "price": 6.0608691,
+    "color": "red",
+    "percent": "-5.40%",
+    "volue": "$\r\n287.95M",
+    "market_cap": "6.06B"
   },
   {
-    "id": 10,
-    "name": "dash",
-    "price": "618.76",
-    "volume": [
-      "115627308"
-    ],
-    "capit": [
-      "4904120363"
-    ]
+    "id": "8",
+    "name": "tron",
+    "price": 0.03668692,
+    "color": "red",
+    "percent": "-4.86%",
+    "volue": "$\r\n194.01M",
+    "market_cap": "2.41B"
   },
   {
-    "id": 11,
-    "name": "monero",
-    "price": "362.47",
-    "volume": [
-      "114589839"
-    ],
-    "capit": [
-      "5722228710"
-    ]
+    "id": "9",
+    "name": "huobitoken",
+    "price": 1.6031813,
+    "color": "red",
+    "percent": "-11.01%",
+    "volue": "$\r\n157.17M",
+    "market_cap": "\r\n                                        157.17M\r\n                                    "
   },
   {
-    "id": 12,
+    "id": "10",
     "name": "neo",
-    "price": "120.34",
-    "volume": [
-      "114459111"
-    ],
-    "capit": [
-      "7822100000"
-    ]
+    "price": 92.083655,
+    "color": "red",
+    "percent": "-7.94%",
+    "volue": "$\r\n141.39M",
+    "market_cap": "5.98B"
   },
   {
-    "id": 13,
-    "name": "huobi-token",
-    "price": "2.18",
-    "volume": [
-      "109664355"
-    ],
-    "capit": [
-      "?"
-    ]
-  },
-  {
-    "id": 14,
-    "name": "stellar",
-    "price": "0.356160",
-    "volume": [
-      "75294358"
-    ],
-    "capit": [
-      "6577603710"
-    ]
-  },
-  {
-    "id": 15,
-    "name": "digixdao",
-    "price": "502.66",
-    "volume": [
-      "66989037"
-    ],
-    "capit": [
-      "1005320000"
-    ]
-  },
-  {
-    "id": 16,
-    "name": "odyssey",
-    "price": "0.020462",
-    "volume": [
-      "62623037"
-    ],
-    "capit": [
-      "40924000"
-    ]
-  },
-  {
-    "id": 17,
-    "name": "zcash",
-    "price": "403.83",
-    "volume": [
-      "53079017"
-    ],
-    "capit": [
-      "1375291121"
-    ]
-  },
-  {
-    "id": 18,
-    "name": "nano",
-    "price": "15.48",
-    "volume": [
-      "51961976"
-    ],
-    "capit": [
-      "2062683514"
-    ]
-  },
-  {
-    "id": 19,
-    "name": "vechain",
-    "price": "4.72",
-    "volume": [
-      "44127325"
-    ],
-    "capit": [
-      "2241850730"
-    ]
-  },
-  {
-    "id": 20,
-    "name": "cardano",
-    "price": "0.294975",
-    "volume": [
-      "39283985"
-    ],
-    "capit": [
-      "7647837632"
-    ]
-  },
-  {
-    "id": 21,
-    "name": "elastos",
-    "price": "76.75",
-    "volume": [
-      "39207725"
-    ],
-    "capit": [
-      "?"
-    ]
-  },
-  {
-    "id": 22,
-    "name": "binance-coin",
-    "price": "10.29",
-    "volume": [
-      "35350554"
-    ],
-    "capit": [
-      "1018854060"
-    ]
-  },
-  {
-    "id": 23,
-    "name": "blockmason",
-    "price": "1.11",
-    "volume": [
-      "33570516"
-    ],
-    "capit": [
-      "50134482"
-    ]
-  },
-  {
-    "id": 24,
-    "name": "omisego",
-    "price": "18.08",
-    "volume": [
-      "32638339"
-    ],
-    "capit": [
-      "1844929340"
-    ]
-  },
-  {
-    "id": 25,
+    "id": "11",
     "name": "qtum",
-    "price": "25.91",
-    "volume": [
-      "32594741"
-    ],
-    "capit": [
-      "1915370944"
-    ]
+    "price": 20.093762,
+    "color": "red",
+    "percent": "-6.45%",
+    "volue": "$\r\n125.34M",
+    "market_cap": "2.00B"
   },
   {
-    "id": 26,
-    "name": "theta-token",
-    "price": "0.222306",
-    "volume": [
-      "28370535"
-    ],
-    "capit": [
-      "129585850"
-    ]
+    "id": "12",
+    "name": "monero",
+    "price": 290.88012,
+    "color": "red",
+    "percent": "-13.55%",
+    "volue": "$\r\n117.48M",
+    "market_cap": "4.53B"
   },
   {
-    "id": 27,
-    "name": "iota",
-    "price": "1.90",
-    "volume": [
-      "26859830"
-    ],
-    "capit": [
-      "5281107538"
-    ]
+    "id": "13",
+    "name": "dash",
+    "price": 491.99703,
+    "color": "red",
+    "percent": "-3.80%",
+    "volue": "$\r\n86.54M",
+    "market_cap": "3.90B"
   },
   {
-    "id": 28,
+    "id": "14",
+    "name": "ontology",
+    "price": 1.9544212,
+    "color": "green",
+    "percent": "+13.16%",
+    "volue": "$\r\n80.94M",
+    "market_cap": "\r\n                                        80.94M\r\n                                    "
+  },
+  {
+    "id": "15",
+    "name": "viacoin",
+    "price": 2.5281223,
+    "color": "red",
+    "percent": "-7.49%",
+    "volue": "$\r\n72.72M",
+    "market_cap": "58.13M"
+  },
+  {
+    "id": "16",
+    "name": "zcash",
+    "price": 320.64374,
+    "color": "red",
+    "percent": "-7.38%",
+    "volue": "$\r\n47.99M",
+    "market_cap": "968.38M"
+  },
+  {
+    "id": "17",
+    "name": "arcblock",
+    "price": 0.8387455,
+    "color": "red",
+    "percent": "-6.19%",
+    "volue": "$\r\n47.83M",
+    "market_cap": "77.39M"
+  },
+  {
+    "id": "18",
     "name": "iostoken",
-    "price": "0.034165",
-    "volume": [
-      "22352939"
-    ],
-    "capit": [
-      "232120765"
-    ]
+    "price": 0.01984088,
+    "color": "red",
+    "percent": "-17.63%",
+    "volue": "$\r\n46.99M",
+    "market_cap": "134.80M"
   },
   {
-    "id": 29,
+    "id": "19",
+    "name": "omisego",
+    "price": 13.842056,
+    "color": "red",
+    "percent": "-4.05%",
+    "volue": "$\r\n43.83M",
+    "market_cap": "1.94B"
+  },
+  {
+    "id": "20",
+    "name": "cardano",
+    "price": 0.21965361,
+    "color": "red",
+    "percent": "-8.89%",
+    "volue": "$\r\n42.89M",
+    "market_cap": "6.83B"
+  },
+  {
+    "id": "21",
+    "name": "binancecoin",
+    "price": 8.2035525,
+    "color": "red",
+    "percent": "-9.32%",
+    "volue": "$\r\n42.06M",
+    "market_cap": "812.26M"
+  },
+  {
+    "id": "22",
+    "name": "iexec",
+    "price": 1.3792226,
+    "color": "red",
+    "percent": "-8.97%",
+    "volue": "$\r\n41.35M",
+    "market_cap": "119.99M"
+  },
+  {
+    "id": "23",
     "name": "nem",
-    "price": "0.364695",
-    "volume": [
-      "20985756"
-    ],
-    "capit": [
-      "3282255000"
-    ]
+    "price": 0.33074387,
+    "color": "green",
+    "percent": "+12.91%",
+    "volue": "$\r\n41.15M",
+    "market_cap": "2.97B"
   },
   {
-    "id": 30,
-    "name": "waves",
-    "price": "6.86",
-    "volume": [
-      "18967509"
-    ],
-    "capit": [
-      "686000000"
-    ]
+    "id": "24",
+    "name": "nano",
+    "price": 10.802615,
+    "color": "red",
+    "percent": "-9.61%",
+    "volue": "$\r\n40.70M",
+    "market_cap": "1.43B"
   },
   {
-    "id": 31,
-    "name": "aelf",
-    "price": "1.21",
-    "volume": [
-      "17724142"
-    ],
-    "capit": [
-      "302500000"
-    ]
+    "id": "25",
+    "name": "vechain",
+    "price": 3.6826375,
+    "color": "red",
+    "percent": "-10.11%",
+    "volue": "$\r\n36.60M",
+    "market_cap": "1.72B"
   },
   {
-    "id": 32,
+    "id": "26",
+    "name": "stellarlumens",
+    "price": 0.30828249,
+    "color": "red",
+    "percent": "-4.95%",
+    "volue": "$\r\n32.26M",
+    "market_cap": "5.51B"
+  },
+  {
+    "id": "27",
+    "name": "iota",
+    "price": 1.3935417,
+    "color": "red",
+    "percent": "-9.04%",
+    "volue": "$\r\n31.71M",
+    "market_cap": "3.87B"
+  },
+  {
+    "id": "28",
     "name": "hshare",
-    "price": "9.72",
-    "volume": [
-      "15975876"
-    ],
-    "capit": [
-      "415003448"
-    ]
+    "price": 6.025079,
+    "color": "red",
+    "percent": "-5.20%",
+    "volue": "$\r\n30.72M",
+    "market_cap": "255.01M"
   },
   {
-    "id": 33,
-    "name": "genesis-vision",
-    "price": "36.95",
-    "volume": [
-      "15680958"
-    ],
-    "capit": [
-      "137704558"
-    ]
+    "id": "29",
+    "name": "waves",
+    "price": 6.1050041,
+    "color": "red",
+    "percent": "-1.76%",
+    "volue": "$\r\n28.48M",
+    "market_cap": "610.50M"
   },
   {
-    "id": 34,
-    "name": "adtoken",
-    "price": "0.088658",
-    "volume": [
-      "14814112"
-    ],
-    "capit": [
-      "53194800"
-    ]
-  },
-  {
-    "id": 35,
-    "name": "korecoin",
-    "price": "6.50",
-    "volume": [
-      "14138425"
-    ],
-    "capit": [
-      "13146023"
-    ]
-  },
-  {
-    "id": 36,
-    "name": "icon",
-    "price": "3.73",
-    "volume": [
-      "14106102"
-    ],
-    "capit": [
-      "1439654538"
-    ]
-  },
-  {
-    "id": 37,
-    "name": "storj",
-    "price": "1.03",
-    "volume": [
-      "13526170"
-    ],
-    "capit": [
-      "137428258"
-    ]
-  },
-  {
-    "id": 38,
-    "name": "educare",
-    "price": "0.164514",
-    "volume": [
-      "13436457"
-    ],
-    "capit": [
-      "?"
-    ]
-  },
-  {
-    "id": 39,
-    "name": "bytom",
-    "price": "0.416457",
-    "volume": [
-      "13427590"
-    ],
-    "capit": [
-      "411043059"
-    ]
-  },
-  {
-    "id": 40,
-    "name": "metal",
-    "price": "5.35",
-    "volume": [
-      "13228018"
-    ],
-    "capit": [
-      "103260318"
-    ]
-  },
-  {
-    "id": 41,
-    "name": "ink",
-    "price": "0.163700",
-    "volume": [
-      "12401020"
-    ],
-    "capit": [
-      "75942153"
-    ]
-  },
-  {
-    "id": 42,
+    "id": "30",
     "name": "lisk",
-    "price": "18.69",
-    "volume": [
-      "12012193"
-    ],
-    "capit": [
-      "1914969083"
-    ]
+    "price": 15.104626,
+    "color": "red",
+    "percent": "-2.99%",
+    "volue": "$\r\n28.04M",
+    "market_cap": "1.74B"
   },
   {
-    "id": 43,
-    "name": "walton",
-    "price": "18.96",
-    "volume": [
-      "11648709"
-    ],
-    "capit": [
-      "472069455"
-    ]
+    "id": "31",
+    "name": "leverj",
+    "price": 0.09508652,
+    "color": "green",
+    "percent": "+2.37%",
+    "volue": "$\r\n21.96M",
+    "market_cap": "\r\n                                        21.96M\r\n                                    "
   },
   {
-    "id": 44,
-    "name": "medical-chain",
-    "price": "0.240443",
-    "volume": [
-      "11306898"
-    ],
-    "capit": [
-      "44481955"
-    ]
+    "id": "32",
+    "name": "zclassic",
+    "price": 10.801212,
+    "color": "red",
+    "percent": "-22.10%",
+    "volue": "$\r\n21.61M",
+    "market_cap": "33.01M"
   },
   {
-    "id": 45,
-    "name": "swftcoin",
-    "price": "0.016945",
-    "volume": [
-      "11105731"
-    ],
-    "capit": [
-      "29653750"
-    ]
+    "id": "33",
+    "name": "digixdao",
+    "price": 351.39562,
+    "color": "red",
+    "percent": "-14.80%",
+    "volue": "$\r\n21.56M",
+    "market_cap": "702.58M"
   },
   {
-    "id": 46,
-    "name": "bitcoin-gold",
-    "price": "109.71",
-    "volume": [
-      "10727543"
-    ],
-    "capit": [
-      "1849683063"
-    ]
-  },
-  {
-    "id": 47,
-    "name": "raiblocks",
-    "price": "15.47",
-    "volume": [
-      "10613312"
-    ],
-    "capit": [
-      "2061351031"
-    ]
-  },
-  {
-    "id": 48,
-    "name": "sirin-labs-token",
-    "price": "0.621675",
-    "volume": [
-      "10350686"
-    ],
-    "capit": [
-      "61508188"
-    ]
-  },
-  {
-    "id": 49,
-    "name": "verge",
-    "price": "0.056224",
-    "volume": [
-      "10348937"
-    ],
-    "capit": [
-      "824636032"
-    ]
-  },
-  {
-    "id": 50,
-    "name": "ins-ecosystem",
-    "price": "2.20",
-    "volume": [
-      "9547978"
-    ],
-    "capit": [
-      "61780888"
-    ]
-  },
-  {
-    "id": 51,
-    "name": "aidoc",
-    "price": "0.069697",
-    "volume": [
-      "9495360"
-    ],
-    "capit": [
-      "?"
-    ]
-  },
-  {
-    "id": 52,
-    "name": "propy",
-    "price": "1.26",
-    "volume": [
-      "9026686"
-    ],
-    "capit": [
-      "21087284"
-    ]
-  },
-  {
-    "id": 53,
-    "name": "zilliqa",
-    "price": "0.049137",
-    "volume": [
-      "8692444"
-    ],
-    "capit": [
-      "322289739"
-    ]
-  },
-  {
-    "id": 54,
-    "name": "dogecoin",
-    "price": "0.005427",
-    "volume": [
-      "8490468"
-    ],
-    "capit": [
-      "615676534"
-    ]
-  },
-  {
-    "id": 55,
-    "name": "ripio-credit-network",
-    "price": "0.141249",
-    "volume": [
-      "8033937"
-    ],
-    "capit": [
-      "69033049"
-    ]
-  },
-  {
-    "id": 56,
-    "name": "adx-net",
-    "price": "1.30",
-    "volume": [
-      "7976829"
-    ],
-    "capit": [
-      "95459911"
-    ]
-  },
-  {
-    "id": 57,
-    "name": "lunyr",
-    "price": "21.34",
-    "volume": [
-      "7505915"
-    ],
-    "capit": [
-      "49036183"
-    ]
-  },
-  {
-    "id": 58,
-    "name": "wepower",
-    "price": "0.216632",
-    "volume": [
-      "7464957"
-    ],
-    "capit": [
-      "77055084"
-    ]
-  },
-  {
-    "id": 59,
-    "name": "jibrel-network",
-    "price": "0.478358",
-    "volume": [
-      "7368054"
-    ],
-    "capit": [
-      "71753700"
-    ]
-  },
-  {
-    "id": 60,
-    "name": "bread",
-    "price": "0.839714",
-    "volume": [
-      "7186437"
-    ],
-    "capit": [
-      "62464981"
-    ]
-  },
-  {
-    "id": 61,
-    "name": "adex",
-    "price": "1.30",
-    "volume": [
-      "7122825"
-    ],
-    "capit": [
-      "69229909"
-    ]
-  },
-  {
-    "id": 62,
-    "name": "neblio",
-    "price": "16.33",
-    "volume": [
-      "7117101"
-    ],
-    "capit": [
-      "210749460"
-    ]
-  },
-  {
-    "id": 63,
-    "name": "district0x",
-    "price": "0.098808",
-    "volume": [
-      "7078292"
-    ],
-    "capit": [
-      "59284800"
-    ]
-  },
-  {
-    "id": 64,
-    "name": "numeraire",
-    "price": "35.52",
-    "volume": [
-      "6864998"
-    ],
-    "capit": [
-      "45733812"
-    ]
-  },
-  {
-    "id": 65,
-    "name": "monaco",
-    "price": "9.49",
-    "volume": [
-      "6779056"
-    ],
-    "capit": [
-      "125225694"
-    ]
-  },
-  {
-    "id": 66,
-    "name": "suncontract",
-    "price": "0.324218",
-    "volume": [
-      "6712408"
-    ],
-    "capit": [
-      "37322417"
-    ]
-  },
-  {
-    "id": 67,
-    "name": "raiden-network-token",
-    "price": "2.71",
-    "volume": [
-      "6605166"
-    ],
-    "capit": [
-      "135957817"
-    ]
-  },
-  {
-    "id": 68,
-    "name": "nebulas-token",
-    "price": "8.05",
-    "volume": [
-      "6493586"
-    ],
-    "capit": [
-      "285775000"
-    ]
-  },
-  {
-    "id": 69,
-    "name": "stratis",
-    "price": "8.34",
-    "volume": [
-      "6435238"
-    ],
-    "capit": [
-      "823686823"
-    ]
-  },
-  {
-    "id": 70,
-    "name": "primas",
-    "price": "0.358173",
-    "volume": [
-      "6421322"
-    ],
-    "capit": [
-      "18338458"
-    ]
-  },
-  {
-    "id": 71,
+    "id": "34",
     "name": "salus",
-    "price": "71.33",
-    "volume": [
-      "6269704"
-    ],
-    "capit": [
-      "72042373"
-    ]
+    "price": 89.751946,
+    "color": "green",
+    "percent": "+1.16%",
+    "volue": "$\r\n21.24M",
+    "market_cap": "90.64M"
   },
   {
-    "id": 72,
-    "name": "iconomi",
-    "price": "1.96",
-    "volume": [
-      "6255630"
-    ],
-    "capit": [
-      "195481947"
-    ]
+    "id": "35",
+    "name": "icon",
+    "price": 2.6634522,
+    "color": "red",
+    "percent": "-11.15%",
+    "volue": "$\r\n19.87M",
+    "market_cap": "1.06B"
   },
   {
-    "id": 73,
-    "name": "nuls",
-    "price": "3.51",
-    "volume": [
-      "6250810"
-    ],
-    "capit": [
-      "82712736"
-    ]
+    "id": "36",
+    "name": "genesisvision",
+    "price": 38.909294,
+    "color": "green",
+    "percent": "+6.67%",
+    "volue": "$\r\n19.12M",
+    "market_cap": "145.00M"
   },
   {
-    "id": 74,
-    "name": "golem-network-tokens",
-    "price": "0.435744",
-    "volume": [
-      "6172260"
-    ],
-    "capit": [
-      "363524661"
-    ]
+    "id": "37",
+    "name": "sirinlabs",
+    "price": 0.72512834,
+    "color": "green",
+    "percent": "+20.29%",
+    "volue": "$\r\n18.69M",
+    "market_cap": "166.24M"
   },
   {
-    "id": 75,
-    "name": "nexus",
-    "price": "2.94",
-    "volume": [
-      "6162836"
-    ],
-    "capit": [
-      "164484789"
-    ]
+    "id": "38",
+    "name": "aelf",
+    "price": 0.76265757,
+    "color": "red",
+    "percent": "-15.19%",
+    "volue": "$\r\n18.13M",
+    "market_cap": "190.66M"
   },
   {
-    "id": 76,
-    "name": "bitquence",
-    "price": "5.02",
-    "volume": [
-      "6128113"
-    ],
-    "capit": [
-      "374121117"
-    ]
+    "id": "39",
+    "name": "chronobank",
+    "price": 22.433026,
+    "color": "red",
+    "percent": "-22.25%",
+    "volue": "$\r\n17.83M",
+    "market_cap": "15.92M"
   },
   {
-    "id": 77,
-    "name": "linkeye",
-    "price": "0.062499",
-    "volume": [
-      "6051749"
-    ],
-    "capit": [
-      "?"
-    ]
+    "id": "40",
+    "name": "odyssey",
+    "price": 0.01169863,
+    "color": "red",
+    "percent": "-14.48%",
+    "volue": "$\r\n16.84M",
+    "market_cap": "23.39M"
   },
   {
-    "id": 78,
-    "name": "bibox-token",
-    "price": "0.701235",
-    "volume": [
-      "6050620"
-    ],
-    "capit": [
-      "73894788"
-    ]
+    "id": "41",
+    "name": "cofoundit",
+    "price": 0.1356106,
+    "color": "green",
+    "percent": "+9.44%",
+    "volue": "$\r\n16.59M",
+    "market_cap": "67.80M"
   },
   {
-    "id": 79,
-    "name": "nubits",
-    "price": "0.997484",
-    "volume": [
-      "5994345"
-    ],
-    "capit": [
-      "13099082"
-    ]
+    "id": "42",
+    "name": "elastos",
+    "price": 47.909851,
+    "color": "green",
+    "percent": "+4.23%",
+    "volue": "$\r\n16.11M",
+    "market_cap": "\r\n                                        16.11M\r\n                                    "
   },
   {
-    "id": 80,
-    "name": "wax",
-    "price": "0.327006",
-    "volume": [
-      "5959470"
-    ],
-    "capit": [
-      "161199091"
-    ]
+    "id": "43",
+    "name": "zilliqa",
+    "price": 0.03809076,
+    "color": "red",
+    "percent": "-8.51%",
+    "volue": "$\r\n15.89M",
+    "market_cap": "250.66M"
   },
   {
-    "id": 81,
-    "name": "iot-chain",
-    "price": "1.87",
-    "volume": [
-      "5896489"
-    ],
-    "capit": [
-      "89759594"
-    ]
+    "id": "44",
+    "name": "medicalchain",
+    "price": 0.15002332,
+    "color": "red",
+    "percent": "-18.41%",
+    "volue": "$\r\n15.74M",
+    "market_cap": "27.75M"
   },
   {
-    "id": 82,
-    "name": "gifto",
-    "price": "0.397066",
-    "volume": [
-      "5676040"
-    ],
-    "capit": [
-      "62681366"
-    ]
+    "id": "45",
+    "name": "walton",
+    "price": 16.421424,
+    "color": "red",
+    "percent": "-11.56%",
+    "volue": "$\r\n14.16M",
+    "market_cap": "1.14B"
   },
   {
-    "id": 83,
-    "name": "ruff",
-    "price": "0.107757",
-    "volume": [
-      "5622786"
-    ],
-    "capit": [
-      "?"
-    ]
+    "id": "46",
+    "name": "thetatoken",
+    "price": 0.13757597,
+    "color": "red",
+    "percent": "-18.50%",
+    "volue": "$\r\n14.15M",
+    "market_cap": "80.90M"
   },
   {
-    "id": 84,
-    "name": "qunqun",
-    "price": "0.054521",
-    "volume": [
-      "5469370"
-    ],
-    "capit": [
-      "25211842"
-    ]
+    "id": "47",
+    "name": "educare",
+    "price": 0.12625169,
+    "color": "red",
+    "percent": "-5.66%",
+    "volue": "$\r\n13.85M",
+    "market_cap": "\r\n                                        13.85M\r\n                                    "
   },
   {
-    "id": 85,
-    "name": "delphy",
-    "price": "1.80",
-    "volume": [
-      "5405491"
-    ],
-    "capit": [
-      "56550013"
-    ]
+    "id": "48",
+    "name": "bitcoingold",
+    "price": 86.064822,
+    "color": "red",
+    "percent": "-3.63%",
+    "volue": "$\r\n13.62M",
+    "market_cap": "1.45B"
   },
   {
-    "id": 86,
+    "id": "49",
+    "name": "truechain",
+    "price": 0.68862859,
+    "color": "red",
+    "percent": "-2.77%",
+    "volue": "$\r\n13.46M",
+    "market_cap": "17.21M"
+  },
+  {
+    "id": "50",
+    "name": "bytom",
+    "price": 0.35161424,
+    "color": "red",
+    "percent": "-5.49%",
+    "volue": "$\r\n11.76M",
+    "market_cap": "347.04M"
+  },
+  {
+    "id": "51",
     "name": "data",
-    "price": "0.017949",
-    "volume": [
-      "5208179"
-    ],
-    "capit": [
-      "76361091"
-    ]
+    "price": 0.00973326,
+    "color": "red",
+    "percent": "-9.92%",
+    "volue": "$\r\n11.32M",
+    "market_cap": "41.40M"
   },
   {
-    "id": 87,
-    "name": "vericoin",
-    "price": "1.14",
-    "volume": [
-      "5079100"
-    ],
-    "capit": [
-      "35151305"
-    ]
+    "id": "52",
+    "name": "nubits",
+    "price": 1.00262,
+    "color": "green",
+    "percent": "+0.29%",
+    "volue": "$\r\n11.26M",
+    "market_cap": "2.25M"
   },
   {
-    "id": 88,
-    "name": "kyber-network",
-    "price": "1.82",
-    "volume": [
-      "5022332"
-    ],
-    "capit": [
-      "244121509"
-    ]
+    "id": "53",
+    "name": "dogecoin",
+    "price": 0.00393074,
+    "color": "red",
+    "percent": "-0.87%",
+    "volue": "$\r\n10.68M",
+    "market_cap": "446.14M"
   },
   {
-    "id": 89,
-    "name": "decentraland",
-    "price": "0.111926",
-    "volume": [
-      "4984705"
-    ],
-    "capit": [
-      "117538139"
-    ]
+    "id": "54",
+    "name": "medibloc",
+    "price": 0.01871781,
+    "color": "red",
+    "percent": "-22.61%",
+    "volue": "$\r\n10.16M",
+    "market_cap": "\r\n                                        10.16M\r\n                                    "
   },
   {
-    "id": 90,
-    "name": "viberate",
-    "price": "0.262601",
-    "volume": [
-      "4958572"
-    ],
-    "capit": [
-      "43372879"
-    ]
+    "id": "55",
+    "name": "metal",
+    "price": 4.0607374,
+    "color": "red",
+    "percent": "-12.33%",
+    "volue": "$\r\n10.16M",
+    "market_cap": "270.39M"
   },
   {
-    "id": 91,
-    "name": "tenx",
-    "price": "1.90",
-    "volume": [
-      "4920507"
-    ],
-    "capit": [
-      "198856489"
-    ]
+    "id": "56",
+    "name": "swftcoin",
+    "price": 0.01020121,
+    "color": "red",
+    "percent": "-8.12%",
+    "volue": "$\r\n9.82M",
+    "market_cap": "17.85M"
   },
   {
-    "id": 92,
-    "name": "gxshares",
-    "price": "3.91",
-    "volume": [
-      "4817225"
-    ],
-    "capit": [
-      "234600000"
-    ]
+    "id": "57",
+    "name": "adex",
+    "price": 1.0342531,
+    "color": "green",
+    "percent": "+3.49%",
+    "volue": "$\r\n9.27M",
+    "market_cap": "103.42M"
   },
   {
-    "id": 93,
-    "name": "power-ledger",
-    "price": "0.587823",
-    "volume": [
-      "4813226"
-    ],
-    "capit": [
-      "213927979"
-    ]
+    "id": "58",
+    "name": "c20",
+    "price": 1.5869904,
+    "color": "red",
+    "percent": "-5.83%",
+    "volue": "$\r\n9.08M",
+    "market_cap": "\r\n                                        9.08M\r\n                                    "
   },
   {
-    "id": 94,
+    "id": "59",
+    "name": "ruff",
+    "price": 0.06747774,
+    "color": "red",
+    "percent": "-13.17%",
+    "volue": "$\r\n8.87M",
+    "market_cap": "\r\n                                        8.87M\r\n                                    "
+  },
+  {
+    "id": "60",
+    "name": "substratum",
+    "price": 0.44351874,
+    "color": "green",
+    "percent": "+7.81%",
+    "volue": "$\r\n8.86M",
+    "market_cap": "100.27M"
+  },
+  {
+    "id": "61",
+    "name": "sxut",
+    "price": 0.3622834,
+    "color": "red",
+    "percent": "-6.02%",
+    "volue": "$\r\n8.57M",
+    "market_cap": "\r\n                                        8.57M\r\n                                    "
+  },
+  {
+    "id": "62",
+    "name": "verge",
+    "price": 0.04024331,
+    "color": "red",
+    "percent": "-6.89%",
+    "volue": "$\r\n8.21M",
+    "market_cap": "514.85M"
+  },
+  {
+    "id": "63",
+    "name": "ins",
+    "price": 1.6831064,
+    "color": "red",
+    "percent": "-5.52%",
+    "volue": "$\r\n7.84M",
+    "market_cap": "47.26M"
+  },
+  {
+    "id": "64",
+    "name": "nucleusvision",
+    "price": 0.02321009,
+    "color": "red",
+    "percent": "-10.63%",
+    "volue": "$\r\n7.68M",
+    "market_cap": "\r\n                                        7.68M\r\n                                    "
+  },
+  {
+    "id": "65",
+    "name": "iotchain",
+    "price": 1.0398685,
+    "color": "red",
+    "percent": "-9.32%",
+    "volue": "$\r\n7.37M",
+    "market_cap": "51.99M"
+  },
+  {
+    "id": "66",
+    "name": "golem",
+    "price": 0.3081889,
+    "color": "red",
+    "percent": "-16.49%",
+    "volue": "$\r\n7.27M",
+    "market_cap": "252.71M"
+  },
+  {
+    "id": "67",
+    "name": "wepower",
+    "price": 0.11810944,
+    "color": "red",
+    "percent": "-6.62%",
+    "volue": "$\r\n7.17M",
+    "market_cap": "42.01M"
+  },
+  {
+    "id": "68",
+    "name": "stratis",
+    "price": 5.8929312,
+    "color": "red",
+    "percent": "-4.57%",
+    "volue": "$\r\n6.92M",
+    "market_cap": "582.03M"
+  },
+  {
+    "id": "69",
     "name": "0x",
-    "price": "0.921212",
-    "volume": [
-      "4808403"
-    ],
-    "capit": [
-      "475554062"
-    ]
+    "price": 0.64576478,
+    "color": "red",
+    "percent": "-7.71%",
+    "volue": "$\r\n6.75M",
+    "market_cap": "645.76M"
   },
   {
-    "id": 95,
-    "name": "guppy",
-    "price": "0.418891",
-    "volume": [
-      "4782945"
-    ],
-    "capit": [
-      "31416825"
-    ]
+    "id": "70",
+    "name": "blockmason",
+    "price": 0.7005144,
+    "color": "red",
+    "percent": "-16.43%",
+    "volue": "$\r\n6.57M",
+    "market_cap": "31.63M"
   },
   {
-    "id": 96,
-    "name": "quantstamp",
-    "price": "0.238323",
-    "volume": [
-      "4704477"
-    ],
-    "capit": [
-      "147120165"
-    ]
+    "id": "71",
+    "name": "educationtoken",
+    "price": 0.02976133,
+    "color": "red",
+    "percent": "-16.60%",
+    "volue": "$\r\n6.55M",
+    "market_cap": "\r\n                                        6.55M\r\n                                    "
   },
   {
-    "id": 97,
-    "name": "bytecoin-bcn",
-    "price": "0.004211",
-    "volume": [
-      "4579300"
-    ],
-    "capit": [
-      "773823064"
-    ]
+    "id": "72",
+    "name": "santiment",
+    "price": 1.5872711,
+    "color": "red",
+    "percent": "-9.06%",
+    "volue": "$\r\n6.52M",
+    "market_cap": "132.27M"
   },
   {
-    "id": 98,
+    "id": "73",
+    "name": "korecoin",
+    "price": 4.7590057,
+    "color": "green",
+    "percent": "+1.88%",
+    "volue": "$\r\n6.45M",
+    "market_cap": "5.94M"
+  },
+  {
+    "id": "74",
+    "name": "monetha",
+    "price": 0.12306966,
+    "color": "red",
+    "percent": "-7.28%",
+    "volue": "$\r\n6.45M",
+    "market_cap": "26.68M"
+  },
+  {
+    "id": "75",
+    "name": "nebulas",
+    "price": 5.9094965,
+    "color": "red",
+    "percent": "-7.94%",
+    "volue": "$\r\n6.40M",
+    "market_cap": "209.78M"
+  },
+  {
+    "id": "76",
+    "name": "civic",
+    "price": 0.2944313,
+    "color": "red",
+    "percent": "-3.50%",
+    "volue": "$\r\n6.37M",
+    "market_cap": "294.43M"
+  },
+  {
+    "id": "77",
+    "name": "nuls",
+    "price": 2.9758526,
+    "color": "red",
+    "percent": "-18.57%",
+    "volue": "$\r\n6.32M",
+    "market_cap": "119.03M"
+  },
+  {
+    "id": "78",
+    "name": "nexus",
+    "price": 3.1693013,
+    "color": "red",
+    "percent": "-10.29%",
+    "volue": "$\r\n5.90M",
+    "market_cap": "51.95M"
+  },
+  {
+    "id": "79",
+    "name": "monaco",
+    "price": 6.5537639,
+    "color": "red",
+    "percent": "-8.22%",
+    "volue": "$\r\n5.86M",
+    "market_cap": "207.01M"
+  },
+  {
+    "id": "80",
+    "name": "bitcoindiamond",
+    "price": 13.988201,
+    "color": "red",
+    "percent": "-32.92%",
+    "volue": "$\r\n5.61M",
+    "market_cap": "\r\n                                        5.61M\r\n                                    "
+  },
+  {
+    "id": "81",
+    "name": "oceanchain",
+    "price": 0.00739353,
+    "color": "red",
+    "percent": "-0.55%",
+    "volue": "$\r\n5.49M",
+    "market_cap": "\r\n                                        5.49M\r\n                                    "
+  },
+  {
+    "id": "82",
+    "name": "centra",
+    "price": 0.47674287,
+    "color": "red",
+    "percent": "-5.35%",
+    "volue": "$\r\n5.44M",
+    "market_cap": "32.41M"
+  },
+  {
+    "id": "83",
+    "name": "linkeye",
+    "price": 0.0377164,
+    "color": "red",
+    "percent": "-8.98%",
+    "volue": "$\r\n5.29M",
+    "market_cap": "22.62M"
+  },
+  {
+    "id": "84",
+    "name": "aidoc",
+    "price": 0.03631257,
+    "color": "red",
+    "percent": "-17.12%",
+    "volue": "$\r\n5.29M",
+    "market_cap": "\r\n                                        5.29M\r\n                                    "
+  },
+  {
+    "id": "85",
+    "name": "suncontract",
+    "price": 0.21169854,
+    "color": "red",
+    "percent": "-1.99%",
+    "volue": "$\r\n5.17M",
+    "market_cap": "22.80M"
+  },
+  {
+    "id": "86",
+    "name": "enigma",
+    "price": 1.9195124,
+    "color": "red",
+    "percent": "-5.31%",
+    "volue": "$\r\n5.11M",
+    "market_cap": "143.64M"
+  },
+  {
+    "id": "87",
+    "name": "delphy",
+    "price": 1.2462324,
+    "color": "red",
+    "percent": "-12.05%",
+    "volue": "$\r\n5.07M",
+    "market_cap": "39.15M"
+  },
+  {
+    "id": "88",
+    "name": "qunqun",
+    "price": 0.02985492,
+    "color": "red",
+    "percent": "-29.13%",
+    "volue": "$\r\n5.03M",
+    "market_cap": "\r\n                                        5.03M\r\n                                    "
+  },
+  {
+    "id": "89",
+    "name": "topchain",
+    "price": 0.02105754,
+    "color": "red",
+    "percent": "-2.11%",
+    "volue": "$\r\n4.97M",
+    "market_cap": "\r\n                                        4.97M\r\n                                    "
+  },
+  {
+    "id": "90",
     "name": "status",
-    "price": "0.156796",
-    "volume": [
-      "4457329"
-    ],
-    "capit": [
-      "544157976"
-    ]
+    "price": 0.14627976,
+    "color": "red",
+    "percent": "-5.28%",
+    "volue": "$\r\n4.95M",
+    "market_cap": "995.41M"
   },
   {
-    "id": 99,
-    "name": "cindicator",
-    "price": "0.130786",
-    "volume": [
-      "4453819"
-    ],
-    "capit": [
-      "189113494"
-    ]
+    "id": "91",
+    "name": "bitshares",
+    "price": 0.16424886,
+    "color": "red",
+    "percent": "-6.28%",
+    "volue": "$\r\n4.91M",
+    "market_cap": "410.28M"
+  },
+  {
+    "id": "92",
+    "name": "cybermiles",
+    "price": 0.1021057,
+    "color": "red",
+    "percent": "-7.95%",
+    "volue": "$\r\n4.89M",
+    "market_cap": "45.45M"
+  },
+  {
+    "id": "93",
+    "name": "medishares",
+    "price": 0.14010288,
+    "color": "red",
+    "percent": "-6.83%",
+    "volue": "$\r\n4.65M",
+    "market_cap": "\r\n                                        4.65M\r\n                                    "
+  },
+  {
+    "id": "94",
+    "name": "nxt",
+    "price": 0.16967703,
+    "color": "red",
+    "percent": "-4.27%",
+    "volue": "$\r\n4.62M",
+    "market_cap": "169.67M"
+  },
+  {
+    "id": "95",
+    "name": "storj",
+    "price": 0.95254985,
+    "color": "red",
+    "percent": "-1.41%",
+    "volue": "$\r\n4.57M",
+    "market_cap": "98.08M"
+  },
+  {
+    "id": "96",
+    "name": "electronicpkchain",
+    "price": 0.05952266,
+    "color": "red",
+    "percent": "-31.06%",
+    "volue": "$\r\n4.56M",
+    "market_cap": "\r\n                                        4.56M\r\n                                    "
+  },
+  {
+    "id": "97",
+    "name": "coinmeet",
+    "price": 0.03612539,
+    "color": "red",
+    "percent": "-5.34%",
+    "volue": "$\r\n4.46M",
+    "market_cap": "\r\n                                        4.46M\r\n                                    "
+  },
+  {
+    "id": "98",
+    "name": "wax",
+    "price": 0.19878324,
+    "color": "red",
+    "percent": "-9.59%",
+    "volue": "$\r\n4.37M",
+    "market_cap": "97.99M"
+  },
+  {
+    "id": "99",
+    "name": "poanetwork",
+    "price": 0.3296208,
+    "color": "red",
+    "percent": "-5.59%",
+    "volue": "$\r\n4.34M",
+    "market_cap": "58.25M"
+  },
+  {
+    "id": "100",
+    "name": "bread",
+    "price": 0.60187149,
+    "color": "red",
+    "percent": "-7.25%",
+    "volue": "$\r\n4.26M",
+    "market_cap": "35.97M"
   }
 ]

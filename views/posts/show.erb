@@ -28,13 +28,13 @@
 			<% if line.price_by > par['price'].to_f %>
 			<% a = 100 - (par['price'].to_f/(line.price_by.to_f / 100)) %>
 			<% b =(line.price_by*line.number) - (par['price'].to_f*line.number)%>
-			<td style="color: red">-<%= format("%.2f", a) %></td>
+			<td style="color: red">-<%= format("%.2f", a) %>%</td>
 			<td style="color: red">-<%= format("%.2f", b) %>$</td>
 			<% else %>
 			<% a = (par['price'].to_f/(line.price_by.to_f / 100))-100 %>
 			<% b =(par['price'].to_f*line.number)-(line.price_by*line.number)%>
-			<td style="color: green"><%= format("%.2f", a) %></td>
-			<td style="color: green"><%= format("%.2f", b) %>$</td>
+			<td style="color: green">+<%= format("%.2f", a) %>%</td>
+			<td style="color: green">+<%= format("%.2f", b) %>$</td>
 			<% end %>
 		<% end %>
 		<% end %>

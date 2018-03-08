@@ -10,6 +10,7 @@ require "./models/users.rb"
 require './helpers/user_helper.rb'
 
 enable :sessions
+
 before do
 	@parse = Parser.new
 	get_parser
@@ -19,7 +20,6 @@ get '/' do
 	current_user
 	#@user = User.find(session[:id]) if session[:id]
 	@parse = Parser.new
-	update_parser
 	get_parser
 	erb :index
 end
@@ -171,7 +171,6 @@ end
 
 get '/update/index' do
 	update_parser
-	redirect '/'
 end
 
 class Parser
@@ -214,6 +213,5 @@ def get_parser
   file = File.read('storage/reviews.json')
   @parse.parse = JSON.parse(file)
 end
-
 
 

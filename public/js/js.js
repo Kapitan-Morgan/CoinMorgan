@@ -55,7 +55,7 @@ $(".button_for_search").click(function() {
 })
 $("#submit").click(function() {
     $('body').toggleClass('clicked');
-    $('.my_table tr').toggleClass('table_clicked');
-    $('.my_table').toggleClass('td_clicked');
+    $('.my_table tr').toggleClass('');
+    $('.my_table').toggleClass('table-dark');
 })
 

@@ -2,7 +2,10 @@ body{
   background-color: #eaeaea;
 }
 tr {
-  background-color: white;
+  background-color: ;
+}
+.each tr{
+  color: red;
 }
 .div-top{
   margin-top: 150px;
@@ -36,13 +39,14 @@ tr:hover{
   /*box-shadow: 2px -2px 10px rgba(134,134,134,0.5);*/
 }
 thead {
-  box-shadow: 0 8px 29px rgba(0,0,0,1);
+  box-shadow: 0 2px 25px rgba(103, 103, 103, 1);
 }
 .header {
   position: fixed;
   width: 100%;
 	background-color: #464a4e;
   top: 0;
+  z-index: 9999;
 }
 .user{
 	justify-content: flex-end;
@@ -73,12 +77,6 @@ thead {
 	font-size: 1rem;
 	font-weight: 400;
     letter-spacing: 0.06em;
-}
-@media (min-width: 768px){
-  .container {
-    width: 100%;
-    margin: 0 auto;
-  }
 }
 .form-search{
   padding-top: 4px;

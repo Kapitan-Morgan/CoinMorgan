@@ -114,7 +114,7 @@ thead {
   color: black;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 980px) {
   .b-table tbody tr td:nth-child(n+5){
     display: none;
   }

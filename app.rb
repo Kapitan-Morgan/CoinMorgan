@@ -12,12 +12,11 @@ require './helpers/user_helper.rb'
 enable :sessions
 
 before do
-	@parse = Parser.new
+	@current_user = current_user
 	get_parser
 end
 #-----ГЛАВНАЯ-----
 get '/' do
-	current_user
 	#@user = User.find(session[:id]) if session[:id]
 	@parse = Parser.new
 	get_parser
@@ -28,12 +27,9 @@ end
 
 #Просмотр постов пользователя
 get "/posts/show" do
-	if session[:id]
-		@parse = Parser.new
-	    get_parser
-		@user = User.find(session[:id])
+	if @current_user
 		a = Post.all
-		@posts = a.find_all{|e| e[:owner_id] == @user[:id]}
+		@posts = a.find_all{|e| e[:owner_id] == @current_user[:id]}
 		puts @post
 		erb :'posts/show'
 	else 
@@ -42,10 +38,9 @@ get "/posts/show" do
 end
 #-----ПРОСМОТР КОНКРЕТНОГО ПОСТА-----
 get '/post/:id' do
-	if session[:id]
+	if @current_user
 		@post = Post.find(params[:id])
 		if @post[:owner_id] == session[:id]
-			@post = Post.find(params[:id])
 			erb :post_page
 		else
 			erb :'eror/no_access'
@@ -71,8 +66,7 @@ put '/post/:id' do
 end
 #-----ВЬЮХА СОЗДАНИЯ ПОСТА-----
 get '/create' do
-	if session[:id]
-		@user = User.find(session[:id]) if session[:id]
+	if @current_user
 		@parse = Parser.new
 	    get_parser
 		erb :create
@@ -83,9 +77,8 @@ end
 
 #-----КОНТРОЛЛЕР СОЗДАНИЯ ПОСТА-----
 post '/post' do
-	if session[:id]
-		@user = User.find(session[:id])
-		@post = Post.create(name: params[:name].downcase, number: params[:number], price_by: params[:price_by] , owner_id: @user[:id])
+	if @current_user
+		@post = Post.create(name: params[:name].downcase, number: params[:number], price_by: params[:price_by] , owner_id: @current_user[:id])
 		redirect '/posts/show'
 	else
 		erb :'/sessions/login'
@@ -212,6 +205,7 @@ end
 
 def get_parser
   file = File.read('storage/reviews.json')
+  @parse = Parser.new
   @parse.parse = JSON.parse(file)
 end
 

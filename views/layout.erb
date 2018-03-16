@@ -15,14 +15,15 @@
 	<div class="header navbar navbar-expand flex-column flex-md-row bd-navbar">
  		<ul class="menu col-lg-6 navbar-nav bd-navbar-nav flex-row">
    		<li class="nav-item"><a class="nav-link" href="/">Главная</a></li>
-   		<% if current_user %>
+   		<% if @current_user %>
    		<li class="nav-item"><a class="nav-link" href="/posts/show">Портфель</a></li>
    		<li class="nav-item"><button type="button" id="my-btn-menu" class="my-btn-menu btn btn-primary" data-toggle="modal" data-target="#myModal">
   			Новая запись 
 			</button></li>
 		</ul>
    	<ul class="user col-lg-6 navbar-nav bd-navbar-nav flex-row">
-   		<li class="nav-item"><a class="nav-link" href="/users/home"><%= current_user.username %></a></li>
+   		<li class="nav-item"><a class="nav-link" href="/users/home"><%= 
+   		@current_user.username %></a></li>
    		<li class="nav-item"><a class="nav-link" href="/sessions/logout">Log Out</a></li>
    	<% else %>
    </ul>

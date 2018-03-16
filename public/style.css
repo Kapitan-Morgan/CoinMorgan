@@ -121,12 +121,12 @@ thead {
   .b-table thead tr td:nth-child(n+5){
     display: none;
   }
-  /*.b-table tbody tr td:first-child{
+  .b-table tbody tr td:first-child{
     display: none;
   }
   .b-table thead tr td:first-child{
     display: none;
-  }*/
+  }
   .my_table td {
     font-size: 40px;
   }

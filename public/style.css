@@ -38,8 +38,14 @@ tr {
 tr:hover{
   /*box-shadow: 2px -2px 10px rgba(134,134,134,0.5);*/
 }
+.table_head td{
+  font-size: 15px;
+}
 thead {
   box-shadow: 0 2px 25px rgba(103, 103, 103, 1);
+}
+.table_tfoot tr{
+  border-top: 1px solid #e9ecef;
 }
 .header {
   position: fixed;
@@ -99,3 +105,37 @@ thead {
   color: white;
   border-color: #ffe484;
 }
+
+.post_edit_icon{
+  color: grey;
+  cursor: pointer;
+}
+.post_edit_icon:hover{
+  color: black;
+}
+
+@media screen and (max-width: 650px) {
+  .b-table tbody tr td:nth-child(n+5){
+    display: none;
+  }
+  .b-table thead tr td:nth-child(n+5){
+    display: none;
+  }
+  /*.b-table tbody tr td:first-child{
+    display: none;
+  }
+  .b-table thead tr td:first-child{
+    display: none;
+  }*/
+  .my_table td {
+    font-size: 30px;
+  }
+  .my_table{
+    margin-bottom: 100px;
+  }
+}
+
+
+
+
+

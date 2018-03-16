@@ -3,9 +3,9 @@
 	<thead class="table_head">
 	<tr>
 		<td>#</td>
-		<td>coin</td>
-		<td>number</td>
-		<td>price_by</td>
+		<td>Монета</td>
+		<td>Количество</td>
+		<td>Начальная цена</td>
 		<td>сейчас стоит</td>
 		<td>%</td>
 		<td>$</td>
@@ -14,17 +14,23 @@
 		<td></td>
 	</tr>
 	</thead>
+	<% price_all_by = 0 %>
+	<% price_all_today = 0 %>
 <% @posts.each do |line| %>
 <tbody action="/post/<%= line.id %>" method="post">
 	<tr>
 		<td><%= line.id %></td>
 		<td><%= line.name %></td>
 		<td><%= line.number %></td>
-		<td><%= line.price_by %>$</td>
-
+		<% price_coin_by = line.price_by * line.number %>
+		<% price_all_by += price_coin_by %>
+		<td><%= format("%.2f", price_coin_by) %>$</td>
+			<% num = line.number %>
 		<% @parse.parse.each do |par| %>
 		<% if par['name'] == line.name %>
-			<td><%= par['price'] %>$</td>
+			<% price_coin_today = line.number * par['price']%>
+			<% price_all_today += price_coin_today %>
+			<td><%= format("%.2f", price_coin_today)%>$</td>
 			<% if line.price_by > par['price'].to_f %>
 			<% a = 100 - (par['price'].to_f/(line.price_by.to_f / 100)) %>
 			<% b =(line.price_by*line.number) - (par['price'].to_f*line.number)%>
@@ -40,17 +46,44 @@
 		<% end %>
 		<td><%=  %></td>
 		<td>
-			<a class="btn btn-primary" href="/post/<%= line.id %>" method='get'>Show</a>
+			<a class="post_edit_icon fas fa-pencil-alt" href="/post/<%= line.id %>" method='get'></a>
 		</td>
 		<td>
   		<form action="/post/<%= line.id%>" method="post">
-  			<input type="hidden" name="_method" value="DELETE">
-  			<input class="btn btn-primary" type="submit" value="Delete?">
+  			<button style="border: none" class="post_edit_icon fas fa-trash" name="_method" value="DELETE"></button>
 		</form>
  		</td>
 	</tr>
 	</tbody>
 <% end %>
+<tfoot class="table_tfoot">
+	<td></td>
+	<td></td>
+	<td>Всего</td>
+	<td><%= price_all_by %>$</td>
+	<td><%= format("%.2f", price_all_today) %>$</td>
+	<% if price_all_by > price_all_today %>
+		<td style="color: red">
+			<%= format("%.2f", 100 - (price_all_by/(price_all_today/100)) )%>%
+		</td>
+		<td style="color: red">
+			<%= format("%.2f", price_all_today - price_all_by) %>$
+		</td>
+	<% elsif price_all_by < price_all_today %>
+		<td style="color: green">
+			+<%= format("%.2f", price_all_today/(price_all_by/100)-100) %>%
+		</td>
+		<td style="color: green">
+			+<%= format("%.2f", price_all_today - price_all_by) %>$
+		</td>
+	<% else %>
+		<td style="color: grey">0.00%</td>
+		<td style="color: grey">0.00$</td>
+	<%end%>
+	<td></td>
+	<td></td>
+	<td></td>
+</tfoot>
 </table>
 </div>
 

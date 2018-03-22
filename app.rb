@@ -5,7 +5,7 @@ require 'json'
 require 'bcrypt'
 require 'rest-client'
 require 'sinatra/activerecord'
-require "./models/models.rb"
+require "./models/posts.rb"
 require "./models/users.rb"
 require './helpers/user_helper.rb'
 
@@ -26,21 +26,20 @@ end
 #-----POST-----
 
 #Просмотр постов пользователя
-get "/posts/show" do
+get "/posts" do
 	if @current_user
-		a = Post.all
-		@posts = a.find_all{|e| e[:owner_id] == @current_user[:id]}
-		puts @post
+		@posts = @current_user.posts
 		erb :'posts/show'
-	else 
+	else
 		erb :'users/login'
 	end
 end
 #-----ПРОСМОТР КОНКРЕТНОГО ПОСТА-----
-get '/post/:id' do
+get '/posts/:id' do
 	if @current_user
-		@post = Post.find(params[:id])
-		if @post[:owner_id] == session[:id]
+		ps = @current_user.posts
+		@post = ps.find(params[:id])
+		if @post[:user_id] == session[:id]
 			erb :post_page
 		else
 			erb :'eror/no_access'
@@ -50,13 +49,13 @@ get '/post/:id' do
 	end
 end
 #-----ИЗМЕНЕНИЕ ПОСТА-----
-put '/post/:id' do
+put '/posts/:id/edit' do
 	if session[:id]
 		@post = Post.find(params[:id])
-		if @post[:owner_id] == session[:id]
+		if @post[:user_id] == session[:id]
 			@post.update(name: params[:name], number: params[:number], price_by: params[:price_by])
 			@post.save
-			redirect '/posts/show'
+			redirect '/posts'
 		else
 			erb :'eror/no_access'
 		end
@@ -65,12 +64,12 @@ put '/post/:id' do
 	end
 end
 #-----ВЬЮХА СОЗДАНИЯ ПОСТА-----
-get '/create' do
+get '/posts/new' do
 	if @current_user
 		@parse = Parser.new
 	    get_parser
 		erb :create
-	else 
+	else
 		erb :'users/login'
 	end
 end
@@ -78,8 +77,8 @@ end
 #-----КОНТРОЛЛЕР СОЗДАНИЯ ПОСТА-----
 post '/post' do
 	if @current_user
-		@post = Post.create(name: params[:name].downcase, number: params[:number], price_by: params[:price_by] , owner_id: @current_user[:id])
-		redirect '/posts/show'
+		@post = Post.create(name: params[:name].downcase, number: params[:number], price_by: params[:price_by] , user_id: @current_user[:id])
+		redirect '/posts'
 	else
 		erb :'/sessions/login'
 	end
@@ -88,8 +87,8 @@ end
 #-----УДАЛЕНИЕ ПОСТА-----
 delete '/post/:id' do
 	if session[:id]
-		@post = Post.find(params[:id])	
-		if @post[:owner_id] == session[:id]
+		@post = Post.find(params[:id])
+		if @post[:user_id] == session[:id]
 			@post = Post.find(params[:id])
 			@post.destroy
 			redirect '/posts/show'
@@ -99,7 +98,7 @@ delete '/post/:id' do
 	else
 		erb :'eror/no_access'
 	end
-end 
+end
 
 #-----USER-----
 
@@ -144,17 +143,17 @@ get '/sessions/logout' do
 	redirect '/'
 end
 #-----ДОМАШНЯЯ СТРАНИЦА ПОЛЬЗОВАТЕЛЯ
-get '/users/home' do
+get '/users/:id' do
 	#@user = User.find(session[:id]) if session[:id]
 	erb :'users/home'
 end
 #-----ВЬЮХА РЕГИСТРАЦИИИ-----
-get '/registrations/signup' do
+get '/users/signup' do
 	#@user = User.find(session[:id]) if session[:id]
 	erb :registrations
 end
 #-----ВЬЮХА ВХОДА В АККАУНТ-----
-get '/sessions/login' do
+get '/users/login' do
 	#@user = User.find(session[:id]) if session[:id]
 	puts session
 	erb :'users/login'
@@ -208,5 +207,3 @@ def get_parser
   @parse = Parser.new
   @parse.parse = JSON.parse(file)
 end
-
-

@@ -6,7 +6,7 @@
 -->
 
 <h2>Edit Post</h2>
-<form method="post" action="/post/<%= @post.id %>"> 
+<form method="post" action="/posts/<%= @post.id %>/edit"> 
     <input type="hidden" name="_method" value="put">
     <input type="text" name="name" value="<%= @post.name %>">
     <input type="text" name="number" value="<%= @post.number %>">

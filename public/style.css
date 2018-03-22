@@ -115,16 +115,16 @@ thead {
 }
 
 @media screen and (max-width: 980px) {
-  .b-table tbody tr td:nth-child(n+5){
+  .gl-tab tbody tr td:nth-child(n+5){
     display: none;
   }
-  .b-table thead tr td:nth-child(n+5){
+  .gl-tab thead tr td:nth-child(n+5){
     display: none;
   }
-  .b-table tbody tr td:first-child{
+  .gl-tab tbody tr td:first-child{
     display: none;
   }
-  .b-table thead tr td:first-child{
+  .gl-tab thead tr td:first-child{
     display: none;
   }
   .my_table td {

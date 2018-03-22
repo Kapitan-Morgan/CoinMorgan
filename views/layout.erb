@@ -16,13 +16,13 @@
  		<ul class="menu col-lg-6 navbar-nav bd-navbar-nav flex-row">
    		<li class="nav-item"><a class="nav-link" href="/">Главная</a></li>
    		<% if @current_user %>
-   		<li class="nav-item"><a class="nav-link" href="/posts/show">Портфель</a></li>
+   		<li class="nav-item"><a class="nav-link" href="/posts">Портфель</a></li>
    		<li class="nav-item"><button type="button" id="my-btn-menu" class="my-btn-menu btn btn-primary" data-toggle="modal" data-target="#myModal">
-  			Новая запись 
+  			Новая запись
 			</button></li>
 		</ul>
    	<ul class="user col-lg-6 navbar-nav bd-navbar-nav flex-row">
-   		<li class="nav-item"><a class="nav-link" href="/users/home"><%= 
+   		<li class="nav-item"><a class="nav-link" href="/users/<%= @current_user.id %>"><%=
    		@current_user.username %></a></li>
    		<li class="nav-item"><a class="nav-link" href="/sessions/logout">Выйти</a></li>
    	<% else %>
@@ -32,7 +32,7 @@
   			Регистрация
 			</button></li>
    		<li class="nav-item"><button type="button" class="btn btn-primary my-btn-menu" data-toggle="modal" data-target="#myModal2">
-  			Вход 
+  			Вход
 			</button></li>
 			<% end %>
 			<li>
@@ -51,7 +51,7 @@
 			</li>
    	</ul>
 	</div>
-	
+
  <!-- Modal default -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -60,7 +60,7 @@
         <h4 class="modal-title" id="myModalLabel">Добаление новой записи</h4>
       </div>
       <div class="modal-body">
-      	<form method="post" action="/post"> 
+      	<form method="post" action="/post">
 					<div class="input-group mb-3"><select class="form-control" name="name">
     				<option disabled>coin</option>
     				<% @parse.parse.each do |line| %>
@@ -84,7 +84,7 @@
         <h4 class="modal-title" id="myModalLabel">Вход</h4>
       </div>
       <div class="modal-body">
-      	<form method="post" action="/sessions"> 
+      	<form method="post" action="/sessions">
     			<div class="input-group mb-3">
     				<input class="form-control" type="text" name="email" placeholder="email">
     			</div>
@@ -107,7 +107,7 @@
         <h4 class="modal-title" id="myModalLabel">Регистрация</h4>
       </div>
       <div class="modal-body">
-      	<form method="post" action="/registrations"> 
+      	<form method="post" action="/registrations">
     				<input type="hidden" value="post">
     			<div class="input-group mb-3">
     				<input class="form-control" type="text" name="username" placeholder="name">
@@ -130,7 +130,7 @@
 </div>
 </div>
 <div style="margin-top: 500px">
-	
+
 </div>
 <script src="/js/js.js"></script>
 </body>

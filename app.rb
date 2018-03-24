@@ -38,12 +38,16 @@ end
 get '/posts/:id' do
 	if @current_user
 		ps = @current_user.posts
-		@post = ps.find(params[:id])
+		@post = ps.find(params[:id]) rescue nil
+		unless @post.nil?
 		if @post[:user_id] == session[:id]
 			erb :post_page
 		else
 			erb :'eror/no_access'
 		end
+	else
+		erb :'eror/no_access'
+	end
 	else
 		erb :'eror/no_access'
 	end
@@ -206,4 +210,12 @@ def get_parser
   file = File.read('storage/reviews.json')
   @parse = Parser.new
   @parse.parse = JSON.parse(file)
+end
+
+
+#ERRORS
+
+def not_found
+  raise ActiveRecord::RecordNotFound.new('Not Found')
+	erb :'eror/no_access'
 end

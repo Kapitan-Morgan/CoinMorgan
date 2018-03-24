@@ -1,3 +1,4 @@
+<% @full_title = 'CoinMorganApp' %>
 <div class="row b-table gl-tab">
 <table class="my_table table table-striped table-hover">
 	<thead class="table_head">
@@ -12,7 +13,7 @@
 	</thead>
 <% @parse.parse.each do |line| %>
 	<tr>
-	
+
 		<td><%= line['id'] %></td>
 		<td><%= line['name'].capitalize %></td>
 		<td><%= format("%.2f", line['price'])%> $</td>

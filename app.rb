@@ -95,7 +95,7 @@ delete '/post/:id' do
 		if @post[:user_id] == session[:id]
 			@post = Post.find(params[:id])
 			@post.destroy
-			redirect '/posts/show'
+			redirect '/posts'
 		else
 			erb :'eror/no_access'
 		end

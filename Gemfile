@@ -7,7 +7,7 @@ gem 'nokogiri'
 gem 'json'
 gem 'bcrypt'
 gem 'rest-client'
-
+gem 'sinatra-flash'
 group :production do
 	gem 'pg'
 end

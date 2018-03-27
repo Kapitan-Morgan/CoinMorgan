@@ -8,13 +8,13 @@ setTimeout(func, 1000);  //ждем подгрузки Jsona и выполняе
 function FindOnPage(name, status) {
 
 	input = document.getElementById(name).value; //получаем значение из поля в html
-	
+
 	if(input.length<1&&status==true)
 	{
 		alert('Для поиска вы должны ввести три или более символов');
 		function FindOnPageBack() { document.body.innerHTML = locale_HTML; }
 	}
-	
+
 	if(input.length>=1)
 	{
 		function FindOnPageGo() {
@@ -58,4 +58,6 @@ $("#submit").click(function() {
     $('.my_table tr').toggleClass('');
     $('.my_table').toggleClass('table-dark');
 })
-
+function closeAlert(){
+  document.getElementById("fl").style.display = "none"
+};

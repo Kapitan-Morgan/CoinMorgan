@@ -52,80 +52,94 @@
    	</ul>
 	</div>
 
- <!-- Modal default -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Добаление новой записи</h4>
-      </div>
-      <div class="modal-body">
-      	<form method="post" action="/post">
-					<div class="input-group mb-3"><select class="form-control" name="name">
-    				<option disabled>coin</option>
-    				<% @parse.parse.each do |line| %>
-    				<option name="name"><%= line['name'] %></option>
-    				<% end %>
-   				</select></div>
-    			<input type="hidden" value="post">
-    			<div class="input-group mb-3"><input class="form-control" type="text" name="number" placeholder="Колличество"></div>
-    			<div class="input-group mb-3"><input class="form-control" type="text" name="price_by" placeholder="Цена при покупке"></div>
-    			<button class="btn btn-primary" type="submit" name="_method" value="post">Добавить</button>
-				</form>
-     	</div>
-    </div>
-  </div>
-</div>
-<!-- Modal user LogIn -->
-<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Вход</h4>
-      </div>
-      <div class="modal-body">
-      	<form method="post" action="/sessions">
-    			<div class="input-group mb-3">
-    				<input class="form-control" type="text" name="email" placeholder="email">
-    			</div>
-   			 	<div class="input-group mb-3">
-   			 		<input class="form-control" type="password" name="password" placeholder="password">
-   			 	</div>
-    			<div class="input-group mb-3">
-    				<button class="btn btn-primary" type="submit">Log in</button>
-    			</div>
-				</form>
-     	</div>
-    </div>
-  </div>
-</div>
-<!-- Modal user SignUp -->
-<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Регистрация</h4>
-      </div>
-      <div class="modal-body">
-      	<form method="post" action="/registrations">
-    				<input type="hidden" value="post">
-    			<div class="input-group mb-3">
-    				<input class="form-control" type="text" name="username" placeholder="name">
-    			</div>
-    			<div class="input-group mb-3">
-    				<input class="form-control" type="text" name="email" placeholder="email">
-    			</div>
-    			<div class="input-group mb-3">
-    				<input class="form-control" type="password" name="password" placeholder="password">
-    			</div>
-    <button class="btn btn-primary" type="submit" name="_method" value="post">Registration</button>
-</form>
-     	</div>
-    </div>
-  </div>
-</div>
 <div class="container col-12 col-xl-10">
 	<div class="div-top">
+		<% flash.keys.each do |type| %>
+  <div data-alert id="fl" class="flash alert <%= type %> alert-box radius">
+    <%= flash[type] %>
+    <button href="#" class="close" onclick="closeAlert()">&times;</button>
+  </div>
+	<% end %>
+
+<div class="modal-form">
+
+	<!-- Modal default -->
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h4 class="modal-title" id="myModalLabel">Добаление новой записи</h4>
+       </div>
+       <div class="modal-body">
+       	<form method="post" action="/post">
+ 					<div class="input-group mb-3"><select class="form-control" name="name">
+     				<option disabled>coin</option>
+     				<% @parse.parse.each do |line| %>
+     				<option name="name"><%= line['name'] %></option>
+     				<% end %>
+    				</select></div>
+     			<input type="hidden" value="post">
+     			<div class="input-group mb-3"><input class="form-control" type="text" name="number" placeholder="Колличество"></div>
+     			<div class="input-group mb-3"><input class="form-control" type="text" name="price_by" placeholder="Цена при покупке"></div>
+     			<button class="btn btn-primary" type="submit" name="_method" value="post">Добавить</button>
+ 				</form>
+      	</div>
+     </div>
+   </div>
+ </div>
+
+	<!-- Modal user LogIn -->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h4 class="modal-title" id="myModalLabel">Вход</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<form method="post" action="/sessions">
+	    			<div class="input-group mb-3">
+	    				<input class="form-control" type="text" name="email" placeholder="email">
+	    			</div>
+	   			 	<div class="input-group mb-3">
+	   			 		<input class="form-control" type="password" name="password" placeholder="password">
+	   			 	</div>
+	    			<div class="input-group mb-3">
+	    				<button class="btn btn-primary" type="submit">Log in</button>
+	    			</div>
+					</form>
+	     	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal user SignUp -->
+	<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h4 class="modal-title" id="myModalLabel">Регистрация</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<form method="post" action="/registrations">
+	    				<input type="hidden" value="post">
+	    			<div class="input-group mb-3">
+	    				<input class="form-control" type="text" name="username" placeholder="name">
+	    			</div>
+	    			<div class="input-group mb-3">
+	    				<input class="form-control" type="text" name="email" placeholder="email">
+	    			</div>
+	    			<div class="input-group mb-3">
+	    				<input class="form-control" type="password" name="password" placeholder="password">
+	    			</div>
+	    <button class="btn btn-primary" type="submit" name="_method" value="post">Registration</button>
+	</form>
+	     	</div>
+	    </div>
+	  </div>
+	</div>
+
+</div>
+
  <%= yield %>
 </div>
 </div>

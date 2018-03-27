@@ -4,6 +4,36 @@ body{
 tr {
   background-color: ;
 }
+.modal-dialog{
+  margin-top: 100px;
+}
+.succes {
+  text-align: center;
+    background-color: #42c74294;
+    color: #464646;
+    border-color: #54c5547a;
+    border-width: 3px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.notice {
+  text-align: center;
+    background-color: #ffe484;
+    color: #464646;
+    border-color: #ffdb59;
+    border-width: 3px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.warning {
+  text-align: center;
+    background-color: #ff4949d4;;
+    color: #464646;
+    border-color: #ff5555;;
+    border-width: 3px;
+    font-weight: 700;
+    font-size: 20px;
+}
 .each tr{
   color: red;
 }
@@ -134,8 +164,3 @@ thead {
     margin-bottom: 100px;
   }
 }
-
-
-
-
-

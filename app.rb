@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'sinatra/flash'
 require 'open-uri'
 require 'nokogiri'
 require 'json'
@@ -15,6 +16,7 @@ before do
 	@current_user = current_user
 	get_parser
 end
+
 #-----ГЛАВНАЯ-----
 get '/' do
 	#@user = User.find(session[:id]) if session[:id]
@@ -31,6 +33,7 @@ get "/posts" do
 		@posts = @current_user.posts
 		erb :'posts/show'
 	else
+		flash.now[:warning] = 'Для просмотра войдите в систему'
 		erb :'users/login'
 	end
 end
@@ -43,13 +46,16 @@ get '/posts/:id' do
 		if @post[:user_id] == session[:id]
 			erb :post_page
 		else
-			erb :'eror/no_access'
+			flash.now[:warning] = 'Нет доступа!'
+			erb :index
 		end
 	else
-		erb :'eror/no_access'
+		flash.now[:warning] = 'Такого поста не существует'
+		erb :index
 	end
 	else
-		erb :'eror/no_access'
+		flash.now[:warning] = 'Войдите в систему!'
+		erb :'users/login'
 	end
 end
 #-----ИЗМЕНЕНИЕ ПОСТА-----
@@ -59,12 +65,15 @@ put '/posts/:id/edit' do
 		if @post[:user_id] == session[:id]
 			@post.update(name: params[:name], number: params[:number], price_by: params[:price_by])
 			@post.save
+			flash.now[:succes] = 'Запись успешно изменена'
 			redirect '/posts'
 		else
-			erb :'eror/no_access'
+			flash.now[:warning] = 'Нет доступа!'
+			erb :index
 		end
 	else
-		erb :'/sessions/login'
+		flash.now[:warning] = 'Войдите в систему'
+		erb :'/users/login'
 	end
 end
 #-----ВЬЮХА СОЗДАНИЯ ПОСТА-----
@@ -74,6 +83,7 @@ get '/posts/new' do
 	    get_parser
 		erb :create
 	else
+		flash.now[:warning] = 'Для добавление новых записей войдите в свой аккаунт'
 		erb :'users/login'
 	end
 end
@@ -82,25 +92,29 @@ end
 post '/post' do
 	if @current_user
 		@post = Post.create(name: params[:name].downcase, number: params[:number], price_by: params[:price_by] , user_id: @current_user[:id])
+		flash.now[:succes] = 'Монета добавленна в ваш крипто портфель'
 		redirect '/posts'
 	else
-		erb :'/sessions/login'
+		flash.now[:warning] = 'Для добавление новых записей войдите в свой аккаунт'
+		erb :'users/login'
 	end
 end
 
 #-----УДАЛЕНИЕ ПОСТА-----
 delete '/post/:id' do
-	if session[:id]
+	if @current_user
 		@post = Post.find(params[:id])
 		if @post[:user_id] == session[:id]
 			@post = Post.find(params[:id])
 			@post.destroy
 			redirect '/posts'
 		else
-			erb :'eror/no_access'
+			flash.now[:warning] = 'Нет доступа!'
+			erb :index
 		end
 	else
-		erb :'eror/no_access'
+		flash.now[:warning] = 'Для удаления записей войдите в свой аккаунт'
+		erb :'users/login'
 	end
 end
 
@@ -118,16 +132,20 @@ post '/registrations' do
 			session[:id] = @user.id
 			redirect '/users/home'
 		else
-			erb :'eror/dont_name'
+			flash.now[:warning] = 'Данное имя уже занято!'
+			erb :registrations
 		end
 	else
-		erb :'eror/params'
+		flash.now[:warning] = 'Поля "password" может быть пустым!'
+		erb :registrations
 	end
 	else
-		erb :'eror/params'
+		flash.now[:warning] = 'Поля "email" не может быть пустым!'
+		erb :registrations
 	end
 	else
-		erb :'eror/params'
+		flash.now[:warning] = 'Поле "name" не может быть пустым!'
+		erb :registrations
 	end
 end
 #-----ВХОД В АККАУНТ-----
@@ -138,7 +156,8 @@ post '/sessions' do
    session[:id] = user.id
    redirect to '/'
 	else
-		erb :'eror/session_eror'
+		flash.now[:notice] = 'Нам не удалось подтвердить ваши данные. Проверьте их ещё раз и попробуйте снова.'
+		erb :'users/login'
   end
 end
 #-----ВЫХОД ИЗ СЕССИИ-----

@@ -65,7 +65,7 @@ put '/posts/:id/edit' do
 		if @post[:user_id] == session[:id]
 			@post.update(name: params[:name], number: params[:number], price_by: params[:price_by])
 			@post.save
-			flash.now[:succes] = 'Запись успешно изменена'
+			flash[:succes] = 'Запись успешно изменена'
 			redirect '/posts'
 		else
 			flash.now[:warning] = 'Нет доступа!'

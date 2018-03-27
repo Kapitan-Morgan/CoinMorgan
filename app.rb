@@ -107,6 +107,7 @@ delete '/post/:id' do
 		if @post[:user_id] == session[:id]
 			@post = Post.find(params[:id])
 			@post.destroy
+			flash[:succes] = 'Пост успешно удален'
 			redirect '/posts'
 		else
 			flash.now[:warning] = 'Нет доступа!'

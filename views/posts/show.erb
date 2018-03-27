@@ -51,7 +51,7 @@
 		</td>
 		<td>
   		<form action="/post/<%= line.id%>" method="post">
-  			<button style="border: none" class="post_edit_icon fas fa-trash" name="_method" value="DELETE"></button>
+  			<button style="border: none" class="post_edit_icon fas fa-trash" name="_method" value="DELETE" onclick="return confirmDelete();"></button>
 		</form>
  		</td>
 	</tr>

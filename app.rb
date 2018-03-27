@@ -92,7 +92,7 @@ end
 post '/post' do
 	if @current_user
 		@post = Post.create(name: params[:name].downcase, number: params[:number], price_by: params[:price_by] , user_id: @current_user[:id])
-		flash.now[:succes] = 'Монета добавленна в ваш крипто портфель'
+		flash[:succes] = 'Монета добавленна в ваш крипто портфель'
 		redirect '/posts'
 	else
 		flash.now[:warning] = 'Для добавление новых записей войдите в свой аккаунт'
